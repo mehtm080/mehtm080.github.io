@@ -4,7 +4,6 @@ body {
 }    
 
 p {
-    text-shadow: 0 0 3px #FF0000;
     color: #fb2a63;
     font-size: 30px;
     font-weight: bold;
@@ -15,5 +14,4 @@ p {
     margin:10;
     padding:40px;
 }
-
 
