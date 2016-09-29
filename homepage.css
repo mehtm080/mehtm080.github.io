@@ -1,5 +1,5 @@
 body {
-    background-color:#ebeae7;
+    background-color:black;
     
 }    
 
@@ -9,9 +9,15 @@ p {
     font-weight: bold;
     font-family: Futura;
     text-align: center;
-    background-color:#ffffff;
+    background-color:black;
     width:1150px;
     margin:10;
     padding:40px;
 }
+
+a {
+    color:#fb2a63;
+    text-decoration:none;
+}
+    
 
