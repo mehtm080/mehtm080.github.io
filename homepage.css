@@ -9,7 +9,7 @@ p {
     font-weight: bold;
     font-family: Futura;
     text-align: center;
-    background-color:black;
+    background-color:grey;
     width:1150px;
     margin:10;
     padding:40px;
@@ -20,4 +20,54 @@ a {
     text-decoration:none;
 }
     
+.dropbtn {
+    background-color: grey;
+    color: #fb2a63;
+    padding: 40px;
+    width: 1230px;
+    font-weight: bold;
+    font-family: Futura;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px
+}
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+    text-align: center;
+    font-weight: bold;
+    font-family: Futura;
+    font-size: 30px;
+    padding:40px;
+    width:1150px;
+    display: none;
+    position: absolute;
+    background-color: #fb2a63;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 10px
+}
+
+.dropdown-content a {
+    color: Grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: White}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: Grey;
+}

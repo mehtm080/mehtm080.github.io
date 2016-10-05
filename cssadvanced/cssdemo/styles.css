@@ -1,21 +1,26 @@
 body {
     background-color:#dfcff8;
+    background-image:url(purple.jpg)no-repeat center; 
+  background-size: cover;
 }    
 
+.circle:hover{
+    background-color:white;
+}
 .circle {
     width: 100px;
     height:100px;
     border-radius:100%;
     padding-left: 40px;
     padding-top: 30px;
-    background color:blue;
+    background-color:blue;
     margin:40px;
 }
 
 div {
     width: 200px;
     height:200px;
-    background color:#ba81fe;
+    background-color:#ba81fe;
     padding-left: 40px;
     padding-top: 30px;
     border: 20px dotted black;
@@ -73,7 +78,7 @@ a:hover {
 p {
     color: #6203fb;
     font-size: 12px;
-    font-weight: regular;
+    font-weight: normal;
     font-family: Helvetica, Arial, Sans-Serif;
     background-color:#ba90fe;
     width:200px;
@@ -89,6 +94,77 @@ p {
     color:#3c1778;
     font-size: 40px;
 }
-
-.circle1 {
     
+
+.button{
+    display:block;
+    width:200px;
+    height:200px;
+    background-color:black;
+    background-image: url(sprite.png);
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+ }   
+ 
+ .button:hover{
+     background-position:-200px,0;
+ }
+ 
+ .button:active{
+     background-position:-400px,0;
+ }
+ 
+ .container2 {
+     background-color:black;
+     width:200px;
+     height:400px;
+     margin-bottom: 100px;
+ }
+ 
+ .child{
+     width:40px;
+     height:40px;
+     background-color:yellow;
+     position:relative;
+     bottom:0px;
+     right:0px;
+ }
+ 
+ #infinity{
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid red;
+    -moz-border-radius: 50px 50px 0 50px;
+         border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+#infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+         border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+					
+ 
