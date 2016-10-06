@@ -1,6 +1,5 @@
 body {
     background-color:black;
-    
 }    
 
 p {
@@ -51,7 +50,6 @@ a {
     position: absolute;
     background-color: #fb2a63;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-left: 10px
 }
 
