@@ -1,13 +1,20 @@
-body {
-	background:-webkit-linear-gradient(red,#fa075d, orange, yellow);
-	color: #fa075d;
-	height: 100vh;
-	overflow-x: hidden;
+#myDIV {
+    width: 2300px;
+    height: 150vh;
+    background: black;
+    overflow-x: hidden;
+    -webkit-animation: mymove 5s infinite; 
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    from {background:-webkit-linear-gradient(red,#fa075d, orange, yellow);}
+    to {background:-webkit-linear-gradient(black,#4c4a4f,#929098,#332756, #371990, #522cc3);}
 }
 
 #oval1{
 	position:relative;
-	margin-top: 70px;
+	margin-top: -830px;
 	margin-left: 40px;
 	width: 100px;
 	height: 100px;
@@ -358,4 +365,56 @@ position:relative;
     200%  {left: 1010px;}
     300%  {left: 1110px;}
     600%  {left: 3100px;}
+}
+
+#bird12 {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 100px;
+  z-index: 1;
+  background-color: black;
+  border-radius: 50%;
+  width: 100px;
+  height: 20px;
+  animation: swimming2 25s
+  infinite ease-in alternate;
+}
+
+#bird22 {
+  position: absolute;
+  margin-left: 90px;
+  margin-top: 100px;
+  z-index: 1;
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: swimming2 25s
+  infinite ease-in alternate;
+}
+
+#bird32 {
+ position: absolute;
+  margin-top: 70px;
+  transform: rotate(-50deg);
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 50px;
+  margin-left: 50px;
+  animation: swimming2 25s
+  infinite ease-in alternate;
+}
+
+#bird42 {
+  position: absolute;
+  margin-top: 64px;
+  transform: rotate(-40deg);
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 60px;
+  margin-left: 20px;
+  animation: swimming2 25s
+  infinite ease-in alternate;
 }
