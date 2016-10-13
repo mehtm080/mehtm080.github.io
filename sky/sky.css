@@ -278,6 +278,18 @@ position:relative;
   infinite ease-in alternate;
 }
 
+#bird5 {
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  margin-left: 200px;
+  margin-top: -150px;
+  animation: swimming 15s
+  infinite ease alternate;
+}
+
+
 @keyframes swimming{
 
     0%   {left: 0px;}
@@ -350,6 +362,17 @@ position:relative;
   infinite ease-in alternate;
 }
 
+#bird51 {
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  margin-left: 200px;
+  margin-top: -50px;
+  animation: swimming 10s
+  infinite ease-in alternate;
+}
+
 @keyframes swimming2{
 
     0%   {left: 10px;}
@@ -361,10 +384,10 @@ position:relative;
     75%  {left: 610px;}
     85%  {left: 710px;}
     95%  {left: 810px;}
-    100%  {left: 910px;}
-    200%  {left: 1010px;}
-    300%  {left: 1110px;}
-    600%  {left: 3100px;}
+    100% {left: 910px;}
+    200% {left: 1010px;}
+    300% {left: 1110px;}
+    600% {left: 3100px;}
 }
 
 #bird12 {
@@ -416,5 +439,16 @@ position:relative;
   height: 60px;
   margin-left: 20px;
   animation: swimming2 25s
+  infinite ease-in alternate;
+}
+
+#bird52 {
+  position: absolute;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid black;
+  margin-left: 200px;
+  margin-top: 110px;
+  animation: swimming 10s
   infinite ease-in alternate;
 }
