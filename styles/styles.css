@@ -1,3 +1,26 @@
+body{
+    margin:0;
+    font-size: 0;
+}
+
+.column{
+    display:inline-block;
+    background-color: yellow;
+    height:50px;
+    font-size: 40px;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.full{
+    background-color: orange;
+    height:200px;
+    width:70%;
+    margin: 0 auto;
+    border: 100px 10px;
+    border-style: groove;
+}
+
 .clock{
     width:200px;
     height:200px;
@@ -6,11 +29,13 @@
     animation-duration: 10s;
     animation-timing-function:linear;
     animation-iteration-count: infinite;
+    background-color: orange;
 }
+
 .seconds{
     width:200px;
     height:4px;
-    background-color: black;
+    background-color:black;
     position:absolute;
     top: 98px;
 }
@@ -56,6 +81,7 @@ p {
     animation-duration: 2s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
+    background-color: orange;
 }
 
 @keyframes example {
