@@ -48,12 +48,11 @@ li.dropdown {
     display: block;
 }
 
-body {
-    background-image:"jackandbeanstalk.jpg";
+body  {
+    background-image: url("jackandbeanstalk.jpg");
     background-repeat: no-repeat;
-    margin-top: 40px;
     height:6508px;
-    width: 3060px;
+    width: 5000px;
 }
 
 html, body {
@@ -61,7 +60,7 @@ html, body {
                 height: 100%;
                 margin: 0;
                 padding: 0;
-            }
+    }
 
 #bird1 {
   position: absolute;
