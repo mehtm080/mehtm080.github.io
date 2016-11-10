@@ -1,17 +1,9 @@
-var age= 17;
-var parentsPresent= false;
+var numOfClicks=0;
 
-if (age >= 18 || parentsPresent == true){
-    console.log("Come on in...");
-} else { 
-    if (age==17 ) {
-    console.log("Come back next year");
-} else {
-    console.log("Come back when you're 18, or bring your parents.");
-}
-}
-
-var myName="Mitali Mehta";
-if (myName = "Mitali Nopany") {
-    console.log("Your name is Mitali Nopany");
-}
+$(".button").click(function(){
+    // do stuff...
+    numOfClicks++;
+    $("mark").html(numOfClicks);
+    $("body").toggleclass("lime");
+    
+});

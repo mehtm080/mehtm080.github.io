@@ -1,0 +1,152 @@
+.circle{
+background-color:#137;
+background-image: linear-gradient(30deg, #448 12%, transparent 2.5%, transparent 87%, #448 87.5%, #448),
+linear-gradient(150deg, #448 2%, transparent 2.5%, transparent 87%, #448 87.5%, #448),
+linear-gradient(30deg, #448 2%, transparent 2.5%, transparent 87%, #448 87.5%, #448),
+linear-gradient(150deg, #448 2%, transparent 2.5%, transparent 87%, #448 87.5%, #448),
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+font-size:30px;
+line-height:100px;
+font-family: futura;
+text-align: center;
+color: white;
+opacity:.8;
+position:absolute;
+transform: translate(-50%,-50%);
+}
+
+.circle1{
+position: relative;
+margin-top: 500px;
+background-color:#137;
+background-image: linear-gradient(30deg, #418 12%, transparent 2.5%, transparent 87%, #418 87.5%, #418),
+linear-gradient(150deg, #418 2%, transparent 2.5%, transparent 87%, #418 87.5%, #418),
+linear-gradient(30deg, #418 2%, transparent 2.5%, transparent 87%, #418 87.5%, #418),
+linear-gradient(150deg, #418 2%, transparent 2.5%, transparent 87%, #448 87.5%, #418),
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+font-size:10px;
+line-height:100px;
+font-family: futura;
+text-align: center;
+color: white;
+opacity:.8;
+position:absolute;
+transform: translate(-50%,-50%);
+}
+
+.circle2{
+position: relative;
+margin-top: 900px;
+background-color:#137;
+background-image: linear-gradient(30deg, #918 12%, transparent 2.5%, transparent 87%, #418 87.5%, #918),
+linear-gradient(150deg, #918 2%, transparent 2.5%, transparent 87%, #918 87.5%, #918),
+linear-gradient(30deg, #918 2%, transparent 2.5%, transparent 87%, #918 87.5%, #918),
+linear-gradient(150deg, #918 2%, transparent 2.5%, transparent 87%, #448 87.5%, #918),
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+font-size:10px;
+line-height:100px;
+font-family: futura;
+text-align: center;
+color: white;
+opacity:.8;
+position:absolute;
+transform: translate(-50%,-50%);
+}
+
+.circle1{
+position: relative;
+margin-top: 400px;
+background-color:#137;
+background-image: linear-gradient(30deg, #418 12%, transparent 2.5%, transparent 87%, #418 87.5%, #418),
+linear-gradient(150deg, #418 2%, transparent 2.5%, transparent 87%, #418 87.5%, #418),
+linear-gradient(30deg, #418 2%, transparent 2.5%, transparent 87%, #418 87.5%, #418),
+linear-gradient(150deg, #418 2%, transparent 2.5%, transparent 87%, #448 87.5%, #418),
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+font-size:10px;
+line-height:100px;
+font-family: futura;
+text-align: center;
+color: white;
+opacity:.8;
+position:absolute;
+transform: translate(-50%,-50%);
+}
+
+.circle2{
+position: relative;
+margin-top: 1200px;
+background-color:#137;
+background-image: linear-gradient(30deg, #918 12%, transparent 2.5%, transparent 87%, #418 87.5%, #918),
+linear-gradient(150deg, #918 2%, transparent 2.5%, transparent 87%, #918 87.5%, #918),
+linear-gradient(30deg, #918 2%, transparent 2.5%, transparent 87%, #918 87.5%, #918),
+linear-gradient(150deg, #918 2%, transparent 2.5%, transparent 87%, #448 87.5%, #918),
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+font-size:10px;
+line-height:100px;
+font-family: futura;
+text-align: center;
+color: white;
+opacity:.8;
+position:absolute;
+transform: translate(-50%,-50%);
+}
+
+
+.circle1{
+position: relative;
+margin-top: 600px;
+background-color:#137;
+background-image: linear-gradient(30deg, #418 12%, transparent 2.5%, transparent 87%, #418 87.5%, #418),
+linear-gradient(150deg, #418 2%, transparent 2.5%, transparent 87%, #418 87.5%, #418),
+linear-gradient(30deg, #418 2%, transparent 2.5%, transparent 87%, #418 87.5%, #418),
+linear-gradient(150deg, #418 2%, transparent 2.5%, transparent 87%, #448 87.5%, #418),
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+font-size:10px;
+line-height:100px;
+font-family: futura;
+text-align: center;
+color: white;
+opacity:.8;
+position:absolute;
+transform: translate(-50%,-50%);
+}
+
+.circle3{
+position: relative;
+margin-top: 1800px;
+background-color:#137;
+background-image: linear-gradient(30deg, #918 12%, transparent 2.5%, transparent 87%, #418 87.5%, #918),
+linear-gradient(150deg, #918 2%, transparent 2.5%, transparent 87%, #918 87.5%, #918),
+linear-gradient(30deg, #918 2%, transparent 2.5%, transparent 87%, #918 87.5%, #918),
+linear-gradient(150deg, #918 2%, transparent 2.5%, transparent 87%, #448 87.5%, #918),
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 5%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+font-size:10px;
+line-height:100px;
+font-family: futura;
+text-align: center;
+color: white;
+opacity:.8;
+position:absolute;
+transform: translate(-50%,-50%);
+}
