@@ -2,7 +2,6 @@
 	position:absolute;
 	width: 100px;
 	height: 100px;
-	background-color: white;
 }
 
 .circle{
@@ -16,6 +15,8 @@
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
 }
+
+
 
 .rectangle {
 	position:absolute;
@@ -216,12 +217,16 @@
 	transform: rotate(4deg);
 }
 
-.santaclaus{
+#santaclaus{
   position: relative;
-  animation: santamove 1s
-  infinite ease-in alternate;
+  margin-left: 200px;
+  margin-top:300px;
 }
 
+.move {
+	  animation: santamove 1s infinite ease-in alternate;
+
+}
 @keyframes santamove{
 
     0%   {bottom: 0px;}

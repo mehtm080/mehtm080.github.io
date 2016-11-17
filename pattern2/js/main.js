@@ -49,16 +49,7 @@ $(".snowflake").hover(function(){
     });
     
     
-    $("santaclaus").click(function(){
-    $("santaclaus").animate({
-        left: '250px',
-        opacity: '0.5',
-        height: '150px',
-        width: '150px'
-    });
+$("#santaclaus").click(function(){
+    $(this).addClass("move");
 }); 
 
-function movesantaclaus() {
-    var santaclaus= document.getElementById("santaclaus");
-    plate.classList.toggle("santamove")
-}
