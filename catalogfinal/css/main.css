@@ -1,0 +1,66 @@
+.rectangle {
+	position:absolute;
+	width: 200px;
+	height: 800px;
+	margin-left:-8px; 
+	margin-top: -5px;
+	background: black;
+}
+
+.rectangle1 {
+	position:absolute;
+	width: 884px;
+	height: 800px;
+	margin-left:194px; 
+	margin-top: -5px;
+	background: grey;
+}
+
+.rectangle2 {
+	position:absolute;
+	width: 50px;
+	height: 800px;
+	margin-left:609px; 
+	margin-top: -5px;
+	background: black;
+}
+
+.rectangle3 {
+	position:absolute;
+	width: 200px;
+	height: 800px;
+	margin-left:1080px; 
+	margin-top: -5px;
+	background: black;
+}
+
+.rectangle4 {
+	position:absolute;
+	width: 80px;
+	height: 200px;
+	margin-left:80px; 
+	margin-top: 330px;
+	background: grey;
+}
+
+.button{
+	position:absolute;
+	width: 50px;
+	height: 50px;
+	margin-top:404px;
+	margin-left: 96px;
+	background: red;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	border-radius: 70px;
+	-webkit-animation: mymove 5s infinite; 
+    animation: mymove 1s infinite;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+@-webkit-keyframes mymove {
+    from {background:-webkit-linear-gradient(#9b0c13, #ff000c);}
+    to {background:-webkit-linear-gradient(blue, #9b42f4);}
+}
