@@ -3,7 +3,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #b7c4cc;
+	background-color: #c2d1e8;
 }
 
 .rectangle{
@@ -15,7 +15,7 @@ html, body {
 .rectangle2{
 	width: 100%;
 	height: 100%;
-	background: #bddcef;
+	background: #b7c4cc;
 }
 
 #logo{
@@ -25,17 +25,12 @@ html, body {
 	height: 480px;
 }
 
-h1{
-    font-size: 60px;
-	color: #1f303a;
-	font-family: futura;
-	text-align: center;
-	margin-top: 60px;
-}
 
 p{
+	position:relative;
+	margin-top: -500px;
 	font-size: 30px;
-	color: #586268;
+	color: #70a6ff;
 	font-family: futura;
 	text-align: center;
 }
@@ -45,3 +40,262 @@ a{
 	color:#586268;
 }
 
+.space{
+	position: relative;
+	margin-top:-20px;
+}
+
+.s{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: space 1s
+  infinite ease-in alternate;
+}
+
+@keyframes space{
+    0%   {top: 0px;}
+    25%  {right: 5px;}
+    50%  {top: 30px;}
+    75%  {left: 5px;}
+    100% {top: 0px;}
+}
+
+.p{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: space 1s
+  infinite ease-in alternate;
+}
+
+.a{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: space 1s
+  infinite ease-in alternate;
+}
+
+.c{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: space 1s
+  infinite ease-in alternate;
+}
+
+.e{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: space 1s
+  infinite ease-in alternate;
+}
+
+
+.typeface{
+	position: relative;
+	margin-top:100px;
+}
+
+.t{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 50px;
+	position:relative;
+	animation: typeface 1s
+  infinite ease-in alternate;
+}
+
+@keyframes typeface{
+    0%   {bottom: 0px;}
+    25%  {right: 5px;}
+    50%  {bottom: 30px;}
+    75%  {left: 5px;}
+    100% {bottom: 0px;}
+}
+
+.y{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: typeface 1s
+  infinite ease-in alternate;
+}
+
+.p2{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: typeface 1s
+  infinite ease-in alternate;
+}
+
+.e2{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: typeface 1s
+  infinite ease-in alternate;
+}
+
+.f{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: typeface 1s
+  infinite ease-in alternate;
+}
+
+.a2{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: typeface 1s
+  infinite ease-in alternate;
+}
+
+.c2{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: typeface 1s
+  infinite ease-in alternate;
+}
+
+.e3{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 10px;
+	position:relative;
+	animation: typeface 1s
+  infinite ease-in alternate;
+}
+
+.chance{
+	position: relative;
+	margin-top:50px;
+}
+
+.c3{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 45px;
+	position:relative;
+	animation: chance 1s
+  infinite ease-in alternate;
+}
+
+@keyframes chance{
+    0%   {top: 0px;}
+    25%  {left: 5px;}
+    50%  {top: 30px;}
+    75%  {right: 5px;}
+    100% {top: 0px;}
+}
+
+.c3{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 45px;
+	position:relative;
+	animation: chance 1s
+  infinite ease-in alternate;
+}
+
+.h{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 45px;
+	position:relative;
+	animation: chance 1s
+  infinite ease-in alternate;
+}
+
+.a3{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 45px;
+	position:relative;
+	animation: chance 1s
+  infinite ease-in alternate;
+}
+
+.n{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 45px;
+	position:relative;
+	animation: chance 1s
+  infinite ease-in alternate;
+}
+
+.c4{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 45px;
+	position:relative;
+	animation: chance 1s
+  infinite ease-in alternate;
+}
+
+.e4{
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+	margin-top: 45px;
+	position:relative;
+	animation: chance 1s
+  infinite ease-in alternate;
+}
