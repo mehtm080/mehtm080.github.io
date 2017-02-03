@@ -25,15 +25,14 @@ html, body {
 	height: 480px;
 }
 
-
-p{
-	position:relative;
-	margin-top: -500px;
+.homepage{
+	margin-top: 30px;
 	font-size: 30px;
 	color: #70a6ff;
 	font-family: futura;
 	text-align: center;
 }
+
 
 a{
 	text-decoration: none;
@@ -42,7 +41,7 @@ a{
 
 .space{
 	position: relative;
-	margin-top:-20px;
+	margin-top:20px;
 }
 
 .s{
@@ -52,7 +51,7 @@ a{
 	text-align: center;
 	margin-top: 10px;
 	position:relative;
-	animation: space 1s
+	animation: fontsize 2s infinite;
   infinite ease-in alternate;
 }
 
@@ -71,7 +70,7 @@ a{
 	text-align: center;
 	margin-top: 10px;
 	position:relative;
-	animation: space 1s
+	animation: fontsize 2s infinite;
   infinite ease-in alternate;
 }
 
@@ -82,7 +81,7 @@ a{
 	text-align: center;
 	margin-top: 10px;
 	position:relative;
-	animation: space 1s
+	animation: fontsize 2s infinite;
   infinite ease-in alternate;
 }
 
@@ -93,8 +92,19 @@ a{
 	text-align: center;
 	margin-top: 10px;
 	position:relative;
-	animation: space 1s
-  infinite ease-in alternate;
+	animation: fontsize 2s infinite;
+}
+
+@keyframes fontsize {
+  0% {
+    font-size: 90px;
+  }
+  30% {
+    font-size: 95px;
+  }
+  100% {
+    font-size: 100px;
+  }
 }
 
 .e{
@@ -104,14 +114,31 @@ a{
 	text-align: center;
 	margin-top: 10px;
 	position:relative;
-	animation: space 1s
+	animation: fontsize 2s infinite;
   infinite ease-in alternate;
 }
 
+.presentation{
+	position:relative;
+	margin-top: -390px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
+.sketches{
+	position:relative;
+	margin-top: -20px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
 
 .typeface{
 	position: relative;
-	margin-top:100px;
+	margin-top:50px;
 }
 
 .t{
@@ -212,7 +239,7 @@ a{
 
 .chance{
 	position: relative;
-	margin-top:50px;
+	margin-top:0px;
 }
 
 .c3{
@@ -228,9 +255,9 @@ a{
 
 @keyframes chance{
     0%   {top: 0px;}
-    25%  {left: 5px;}
+    25%  {bottom: 5px;}
     50%  {top: 30px;}
-    75%  {right: 5px;}
+    75%  {bottom: 5px;}
     100% {top: 0px;}
 }
 
@@ -241,7 +268,7 @@ a{
 	text-align: center;
 	margin-top: 45px;
 	position:relative;
-	animation: chance 1s
+	animation: chance 2s
   infinite ease-in alternate;
 }
 
@@ -252,7 +279,7 @@ a{
 	text-align: center;
 	margin-top: 45px;
 	position:relative;
-	animation: chance 1s
+	animation: chance 4s
   infinite ease-in alternate;
 }
 
@@ -263,7 +290,7 @@ a{
 	text-align: center;
 	margin-top: 45px;
 	position:relative;
-	animation: chance 1s
+	animation: chance 3s
   infinite ease-in alternate;
 }
 
@@ -274,7 +301,7 @@ a{
 	text-align: center;
 	margin-top: 45px;
 	position:relative;
-	animation: chance 1s
+	animation: chance 2s
   infinite ease-in alternate;
 }
 
@@ -285,7 +312,7 @@ a{
 	text-align: center;
 	margin-top: 45px;
 	position:relative;
-	animation: chance 1s
+	animation: chance 4s
   infinite ease-in alternate;
 }
 
@@ -296,6 +323,7 @@ a{
 	text-align: center;
 	margin-top: 45px;
 	position:relative;
-	animation: chance 1s
+	animation: chance 5s
   infinite ease-in alternate;
 }
+
