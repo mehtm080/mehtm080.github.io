@@ -1,0 +1,601 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+	cursor: url(../img/id.png), default;
+}
+
+#swipe1 {
+    position: absolute;
+    overflow: hidden;
+    width: 3%;
+    height: 6%;
+    background: #606060;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+    top: 400px;
+    left: 400px;
+}
+
+.box1{
+	position:absolute;
+	width: 20%;
+	height: 20%;
+	margin-left:50%; 
+	margin-top: 50%;
+	background: #606060;
+	border: 2px solid #515151;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	animation: swipe1 1s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+#swipe1:hover .box1 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+@keyframes swipe1{
+    0%   {right: 55%;}
+    100%  {right: 5%;}
+}
+
+.text9{
+	position:absolute;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #f9f9f9;
+	background-color: red;
+	font-size: 50%;
+	border-radius: 10%;
+	text-align: center;
+	top: 0px;
+    right: 0;
+    width: 300px;
+    background-color: red;
+    display: none;
+
+}
+
+#swipe2:hover .text9 {
+	display: block;
+}
+
+#rectangle{
+	width: 100%;
+	height: 100%;
+	background: #f9f9f9;
+}
+
+.classroom {
+	position:absolute;
+	width: 100%;
+	height: 25%;
+	margin-left:0%; 
+	margin-top: 0%;
+	border: 2px solid black;
+	background: #303133;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#elevator1 {
+	position:fixed;
+	overflow: hidden;
+	width: 15%;
+	height: 30%;
+	margin-left:0%; 
+	margin-top: 15%;
+	background: #606060;
+	border: 2px solid #515151;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.line1{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	animation: line1 4s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+#elevator1:hover .line1 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+@keyframes line1{
+  0% {height:10%;}
+  100% {height: 90%;}
+}
+
+.line2{
+	position:relative;
+	width: 8%;
+	height: 46%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 12%;
+	margin-top: -32% ;
+}
+
+.line3{
+	position:relative;
+	width: 8%;
+	height: 56%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 24%;
+	margin-top: -48% ;
+}
+
+.line4{
+	position:relative;
+	width: 8%;
+	height: 46%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 36%;
+	margin-top: -58% ;
+}
+
+.line5{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 48%;
+	margin-top: -48% ;
+}
+
+.text2{
+	position:absolute;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #f9f9f9;
+	background-color: red;
+	font-size: 50%;
+	width: 50%;
+	height: 15%;
+	visibility:hidden;
+	border-radius: 10%;
+	text-align: center;
+}
+
+#elevator1:hover .text2 {
+	visibility:visible;
+}
+
+#elevator2 {
+	position:fixed;
+	width: 15%;
+	height: 30%;
+	margin-left:0%; 
+	margin-top: 40%;
+	overflow: hidden;
+	background: #606060;
+	border: 2px solid #515151;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.line6{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	animation: line2 4s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+#elevator2:hover .line6 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+@keyframes line2{
+  0% {height:10%;}
+  100% {height: 90%;}
+}
+
+.line7{
+	position:relative;
+	width: 8%;
+	height: 46%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 12%;
+	margin-top: -32% ;
+}
+
+.line8{
+	position:relative;
+	width: 8%;
+	height: 56%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 24%;
+	margin-top: -48% ;
+}
+
+.line9{
+	position:relative;
+	width: 8%;
+	height: 46%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 36%;
+	margin-top: -58% ;
+}
+
+.line10{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 48%;
+	margin-top: -48%;
+}
+
+.street {
+	position:absolute;
+	overflow: hidden;
+	width: 320px;
+	height: 200%;
+	margin-left:80%; 
+	margin-top: 0px;
+	background: #202021;
+	border: 2px solid black;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.securitydesk {
+    margin-top: 185px;
+    margin-left: 250px;
+	position:absolute;
+	overflow: hidden;
+	width: 27%;
+	height: 18%; 
+	background: #606060;
+	border: 2px solid #515151;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.text5{
+	position:absolute;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #f9f9f9;
+	background-color: red;
+	font-size: 50%;
+	width: 50%;
+	height: 15%;
+	visibility:hidden;
+	border-radius: 10%;
+	text-align: center;
+}
+
+.securitydesk:hover .text5 {
+	visibility:visible;
+}
+
+.circle1{
+    position: absolute;
+	border-radius: 50%;
+	width: 5%;
+	height: auto;
+	background: white;
+	margin-top:7%;
+	margin-left: 15%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+	animation: move2 6s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+.circle2{
+    position: absolute;
+	border-radius: 50%;
+	width: 5%;
+	height: auto;
+	background: white;
+	margin-top:7%;
+	margin-left: 40%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+    animation: move2 6s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+.circle3{
+    position: absolute;
+	border-radius: 50%;
+	width: 5%;
+	height: auto;
+	background: white;
+	margin-top:7%;
+	margin-left: 65%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+    animation: move2 6s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+@keyframes move2 {
+  0% {
+    height: 20%;
+    width: 5%;
+    border-radius: 50%;
+    opacity:0.5;
+  }
+  100% {
+    height: 60%;
+    width: 20%;
+    border-radius: 70%;
+    opacity:0.7;
+
+  }
+}
+
+.securitydesk:hover .circle1 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+.securitydesk:hover .circle2 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+.securitydesk:hover .circle3 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+#waitingarea {
+	position:absolute;
+	overflow: hidden;
+	width: 20%;
+	height: 10%;
+	margin-left:30%; 
+	margin-top: 100%;
+	background: #606060;
+	border: 2px solid #515151;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.circle4{
+    position: absolute;
+	border-radius: 50%;
+	width: 5%;
+	height: auto;
+	background: white;
+	margin-top:0;
+	margin-left: 10%;
+    animation: move1 8s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
+.circle5{
+    position: absolute;
+	border-radius: 50%;
+	width: 5%;
+	height: auto;
+	background: white;
+	margin-top:0;
+	margin-left: 40%;
+    animation: move1 8s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
+.circle6{
+    position: absolute;
+	border-radius: 50%;
+	width: 5%;
+	height: auto;
+	background: white;
+	margin-top:0;
+	margin-left: 70%;
+    animation: move1 8s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
+@keyframes move1{
+    0%   {right: 5%;}
+    25%  {bottom: 5%;}
+    50%  {left: 5%;}
+    75%  {top: 5%;}
+    100%  {right: 5%;}
+}
+
+#waitingarea:hover .circle4 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+#waitingarea:hover .circle5 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+#waitingarea:hover .circle6 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+#stairs{
+	position:relative;
+	overflow: hidden;
+	width: 10%;
+	height: 40%;
+	margin-left:0%; 
+	margin-top: -60%;
+	background: transparent;
+	border: 2px solid black;
+	opacity: 0.8;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
+.text7{
+	position:absolute;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #f9f9f9;
+	background-color: red;
+	font-size: 50%;
+	width: 50%;
+	height: 15%;
+	visibility:hidden;
+	border-radius: 10%;
+	text-align: center;
+}
+#stairs:hover .text7 {
+	visibility:visible;
+}
+
+.stair1{
+	position:relative;
+	width: 10%;
+	height: 20%;
+	background: #303133;
+	border: 2px solid #6b6b6b;
+	opacity: 0.8;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+	animation: stair 1s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+.stairs2{
+	position:relative;
+	width: 10%;
+	height: 17%;
+	background: #303133;
+	border: 2px solid #6b6b6b;
+	margin-left: 12%;
+	margin-top: -32% fixed;
+	opacity: 0.8;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
+.stairs3{
+	position:relative;
+	width: 10%;
+	height: 16%;
+	background: #303133;
+	border: 2px solid #6b6b6b;
+	margin-left: 24%;
+	margin-top: -48% fixed;
+	opacity: 0.8;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
+.stairs4{
+	position:relative;
+	width: 10%;
+	height: 15%;
+	background: #303133;
+	border: 2px solid #6b6b6b;
+	margin-left: 36%;
+	margin-top: -58% fixed;
+	opacity: 0.8;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
+.stairs5{
+	position:relative;
+	width: 10%;
+	height: 14%;
+	background: #303133;
+	border: 2px solid #6b6b6b;
+	margin-left: 48%;
+	margin-top: -48% fixed;
+	opacity: 0.8;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
+@keyframes stair{
+  10% {
+  	height:30%;
+  }
+  90% {
+  	height: 40%;
+  }
+}
+
+#stairs:hover .stair1 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+#swipe2 {
+    position: absolute;
+    overflow: hidden;
+    width: 3%;
+    height: 6%;
+    background: #606060;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+    top: 500px;
+    left: 400px;
+}
+
+.box2{
+	position:relative;
+	width: 20%;
+	height: 20%;
+	margin-left:50%; 
+	margin-top: 50%;
+	background: #606060;
+	border: 2px solid #515151;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	animation: swipe2 1s alternate infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+#swipe2:hover .box2 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+@keyframes swipe2{
+    0%   {right: 50%;}
+    100%  {right: 0%;}
+}
+
+#door1{
+	position:relative;
+	overflow: hidden;
+	width: 1%;
+	height: 20%;
+	margin-left:70%; 
+	margin-top: 25%;
+	background: #606060;
+	border: 2px solid #515151;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#door2{
+	position:relative;
+	overflow: hidden;
+	width: 1%;
+	height: 20%;
+	margin-left:78.5%; 
+	margin-top: -10%;
+	background: #606060;
+	border: 2px solid #515151;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
