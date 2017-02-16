@@ -47,7 +47,7 @@ html, body {
 	font-family: helvetica;
 	font-weight: bold;
 	color: #f9f9f9;
-	background-color: red;
+	background-color: #cc1a1a;
 	font-size: 50%;
 	border-radius: 10%;
 	text-align: center;
@@ -98,7 +98,7 @@ html, body {
 	height: 30%;
 	background: #303133;
 	border: 2px solid #4f4f4f;
-	animation: line1 4s alternate infinite;
+	animation: line1 4s normal infinite;
 	-webkit-animation-play-state: paused; 
     animation-play-state: paused;
 }
@@ -153,18 +153,49 @@ html, body {
 	margin-top: -48% ;
 }
 
+.line6{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 60%;
+	margin-top: -36% ;
+}
+
+.line7{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 72%;
+	margin-top: -36% ;
+}
+
+.line8{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 84%;
+	margin-top: -30% ;
+}
+
 .text2{
 	position:absolute;
 	font-family: helvetica;
 	font-weight: bold;
 	color: #f9f9f9;
-	background-color: red;
+	background-color: #cc1a1a;
 	font-size: 50%;
 	width: 50%;
 	height: 15%;
 	visibility:hidden;
 	border-radius: 10%;
 	text-align: center;
+	z-index: 100;
 }
 
 #elevator1:hover .text2 {
@@ -183,7 +214,7 @@ html, body {
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.line6{
+.line9{
 	position:relative;
 	width: 8%;
 	height: 30%;
@@ -204,7 +235,7 @@ html, body {
   100% {height: 90%;}
 }
 
-.line7{
+.line10{
 	position:relative;
 	width: 8%;
 	height: 46%;
@@ -214,7 +245,7 @@ html, body {
 	margin-top: -32% ;
 }
 
-.line8{
+.line11{
 	position:relative;
 	width: 8%;
 	height: 56%;
@@ -224,7 +255,7 @@ html, body {
 	margin-top: -48% ;
 }
 
-.line9{
+.line12{
 	position:relative;
 	width: 8%;
 	height: 46%;
@@ -234,7 +265,37 @@ html, body {
 	margin-top: -58% ;
 }
 
-.line10{
+.line13{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 48%;
+	margin-top: -48%;
+}
+
+.line14{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 48%;
+	margin-top: -48%;
+}
+
+.line15{
+	position:relative;
+	width: 8%;
+	height: 30%;
+	background: #303133;
+	border: 2px solid #4f4f4f;
+	margin-left: 48%;
+	margin-top: -48%;
+}
+
+.line16{
 	position:relative;
 	width: 8%;
 	height: 30%;
@@ -273,7 +334,7 @@ html, body {
 	font-family: helvetica;
 	font-weight: bold;
 	color: #f9f9f9;
-	background-color: red;
+	background-color: #cc1a1a;
 	font-size: 50%;
 	width: 50%;
 	height: 15%;
@@ -454,7 +515,7 @@ html, body {
 	font-family: helvetica;
 	font-weight: bold;
 	color: #f9f9f9;
-	background-color: red;
+	background-color: #cc1a1a;
 	font-size: 50%;
 	width: 50%;
 	height: 15%;

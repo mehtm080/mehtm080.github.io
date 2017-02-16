@@ -25,14 +25,29 @@ html, body {
 	height: 480px;
 }
 
-.homepage{
+.lab{
 	margin-top: 30px;
+	font-size: 90px;
+	color: #1f303a;
+	font-family: futura;
+	text-align: center;
+}
+
+.homepage{
+	margin-top: 10px;
 	font-size: 30px;
 	color: #70a6ff;
 	font-family: futura;
 	text-align: center;
 }
 
+.flexgrid{
+	margin-top: 10px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
 
 a{
 	text-decoration: none;
@@ -120,7 +135,7 @@ a{
 
 .presentation{
 	position:relative;
-	margin-top: -390px;
+	margin-top: 0px;
 	font-size: 30px;
 	color: #70a6ff;
 	font-family: futura;
