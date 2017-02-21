@@ -11,16 +11,25 @@
 
           <div id="rectangle">
           <div class="classroom">
-            <div class="s1"></div>
-            <div class="s2"></div>
-            <div class="s3"></div>
-            <div class="s4"></div>
-            <div class="s5"></div>
-            <div class="text1"> What time do you have class and in which classroom?</div>
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+            <div class="c5"></div>
+            <div class="c6"></div>
+            <div class="c7"></div>
+            <div class="text1"> Time for class? Take the elevator to the 6th floor!</div>
           </div>
 
           <div id="elevator1">
-            <div class="text2"> Which floor would you like to access?</div>
+            <div class="text2"> 
+            <form>
+            Which floor would you like to access?<br>
+            <input type="text" name="firstname">
+            <br><br>
+            <div class="submit2">
+            <input type="submit" value="Have a good day!" id="popUpYes"></div>
+            </form></div>
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -50,41 +59,55 @@
             <div class="circle1"></div>
             <div class="circle2"></div> 
             <div class="circle3"></div> 
-            <div class="text5">Hello! Who would you like to check in today? May I have your ID’s?</div>
+             <div class="text5">
+            <form>
+            Hello! Who would you like to check in today and may I have your ID’s please?<br>
+            <input type="text" name="firstname">
+            <br>
+            <div class="submit5">
+            <input type="submit" value="You may enter" id="popUpYes"></div>
+            </form>
           </div>
+          </div>
+         
 
           <div id="waitingarea">
             <div class="circle4"></div>
             <div class="circle5"></div> 
-            <div class="circle6"></div> 
-            <div class="text6">Please take a seat and wait till your friend arrives!</div>
+            <div class="circle6"></div>
           </div>
+          <div class="text6">Please take a seat and wait till your friend arrives!</div>
 
           <div class="rectangle"></div>
           </div>
           
            <div id="stairs">
+            <div class="text7"> <button id="playButton" onmouseenter="document.getElementById('myTune').play()" >Staircase may only be used in case of emergency</button>
+            <audio controls loop hidden id="myTune">
+  <source src="assets/img/alarm.mp3" type="audio/mpeg" autostart="true">
+  </audio>
+  </div>
             <div class="stair1"></div>
             <div class="stairs2"></div> 
             <div class="stairs3"></div> 
             <div class="stairs4"></div> 
             <div class="stairs5"></div> 
-            <div class="text7">Staircase may only be used in case of emergency</div>
           </div>
 
 
-           <div id="swipe1">
+
+            <div id="swipe1">
             <div class="box1"></div>
             <div class="text8"></div>
           </div>
-
+          <div class="stick1"></div>
+          >
+          <div class="text9">Thank you for swiping your ID card! You may use the elevators.</div>
 
            <div id="swipe2">
             <div class="box2"></div>
-
           </div>
-                      <div class="text9">Thank you for swiping your ID card! You may use the elevators.</div>
-
+            <div class="stick2"></div>
 
            <div id="door1">
             <div class="d1"></div>

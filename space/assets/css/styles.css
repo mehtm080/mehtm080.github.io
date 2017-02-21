@@ -27,7 +27,7 @@ html, body {
 	background: #606060;
 	border: 2px solid #515151;
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	animation: swipe1 1s alternate infinite;
+	animation: swipe1 1s normal infinite;
 	-webkit-animation-play-state: paused; 
     animation-play-state: paused;
 }
@@ -48,19 +48,42 @@ html, body {
 	font-weight: bold;
 	color: #f9f9f9;
 	background-color: #cc1a1a;
-	font-size: 50%;
-	border-radius: 10%;
+	font-size: 70%;
 	text-align: center;
-	top: 0px;
-    right: 0;
-    width: 300px;
+	top: 400px;
+    left: 460px;
+    width: 200px;
+    height:30px;
     background-color: red;
     display: none;
-
 }
 
-#swipe2:hover .text9 {
+#swipe1:hover .text9 {
 	display: block;
+}
+
+.stick1{
+	position: absolute;
+    overflow: hidden;
+    width: 1%;
+    height: 9%;
+    background: #606060;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+    top: 440px;
+    left: 412px;
+     animation: stick 2s normal infinite;
+    -webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+#swipe1:hover .stick1 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+@keyframes stick{
+    0%   {height: 9%;}
+    100%  {height: 1%;}
 }
 
 #rectangle{
@@ -70,6 +93,7 @@ html, body {
 }
 
 .classroom {
+	overflow:hidden;
 	position:absolute;
 	width: 100%;
 	height: 25%;
@@ -78,6 +102,149 @@ html, body {
 	border: 2px solid black;
 	background: #303133;
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.text1{
+	position:absolute;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #f9f9f9;
+	background-color: #cc1a1a;
+	font-size: 70%;
+	width: 15%;
+	height: 20%;
+	display: none;
+	text-align: center;
+	left:40%;
+	z-index: 100;
+}
+
+.classroom:hover .text1 {
+	display: block;
+}
+
+.c1{
+	position:relative;
+	height: 3%;
+	width: 10%;
+	background: white;
+	animation: c1 4s normal infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+    visibility: hidden;
+}
+
+.c2{
+	position:relative;
+	height: 3%;
+	width: 10%;
+	background: white;
+	left: 50%;
+	top:10%;
+	animation: c1 4s normal infinite;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+.c3{
+	position:relative;
+	height: 3%;
+	width: 10%;
+	background: white;
+	animation: c1 4s normal infinite;
+	left:40%;
+	top: 20%;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+.c4{
+	position:relative;
+	height: 3%;
+	width: 10%;
+	background: white;
+	animation: c1 4s normal infinite;
+	left:70%;
+	top: 30%;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+.c5{
+	position:relative;
+	height: 3%;
+	width: 10%;
+	background: white;
+	animation: c1 4s normal infinite;
+	left:30%;
+	top: 40%;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+.c6{
+	position:relative;
+	height: 3%;
+	width: 10%;
+	background: white;
+	animation: c1 4s normal infinite;
+	left:60%;
+	top: 50%;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+.c7{
+	position:relative;
+	height: 3%;
+	width: 10%;
+	background: white;
+	animation: c1 4s normal infinite;
+	left:50%;
+	top: 60%;
+	-webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+@keyframes c1{
+    0%   {right: 5%;}
+    50%  {left: 5%;}
+    100%  {right: 5%;}
+}
+
+.classroom:hover .c1 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+.classroom:hover .c2 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+.classroom:hover .c3 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+.classroom:hover .c4 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+.classroom:hover .c5 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+.classroom:hover .c6 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+.classroom:hover .c7 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
 }
 
 #elevator1 {
@@ -97,8 +264,8 @@ html, body {
 	width: 8%;
 	height: 30%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
-	animation: line1 4s normal infinite;
+	border: 1px solid #4f4f4f;
+	animation: line1 2s normal infinite;
 	-webkit-animation-play-state: paused; 
     animation-play-state: paused;
 }
@@ -110,77 +277,78 @@ html, body {
 
 @keyframes line1{
   0% {height:10%;}
-  100% {height: 90%;}
+  100% {height: 140%;}
 }
 
 .line2{
 	position:relative;
 	width: 8%;
-	height: 46%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 12%;
 	margin-top: -32% ;
+
 }
 
 .line3{
 	position:relative;
 	width: 8%;
-	height: 56%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 24%;
-	margin-top: -48% ;
+	margin-top: -61% ;
 }
 
 .line4{
 	position:relative;
 	width: 8%;
-	height: 46%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 36%;
-	margin-top: -58% ;
+	margin-top: -61% ;
 }
 
 .line5{
 	position:relative;
 	width: 8%;
-	height: 30%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 48%;
-	margin-top: -48% ;
+	margin-top: -61% ;
 }
 
 .line6{
 	position:relative;
 	width: 8%;
-	height: 30%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 60%;
-	margin-top: -36% ;
+	margin-top: -61% ;
 }
 
 .line7{
 	position:relative;
 	width: 8%;
-	height: 30%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 72%;
-	margin-top: -36% ;
+	margin-top: -61% ;
 }
 
 .line8{
 	position:relative;
 	width: 8%;
-	height: 30%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 84%;
-	margin-top: -30% ;
+	margin-top: -61% ;
 }
 
 .text2{
@@ -189,13 +357,21 @@ html, body {
 	font-weight: bold;
 	color: #f9f9f9;
 	background-color: #cc1a1a;
-	font-size: 50%;
-	width: 50%;
-	height: 15%;
+	font-size: 70%;
+	width: 75%;
+	height: 45%;
 	visibility:hidden;
-	border-radius: 10%;
 	text-align: center;
 	z-index: 100;
+}
+
+.submit5{
+	position:absolute;
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 70%;
+	left:20%;
+	text-align: center;
 }
 
 #elevator1:hover .text2 {
@@ -219,13 +395,13 @@ html, body {
 	width: 8%;
 	height: 30%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
-	animation: line2 4s alternate infinite;
+	border: 1px solid #4f4f4f;
+	animation: line2 2s normal infinite;
 	-webkit-animation-play-state: paused; 
     animation-play-state: paused;
 }
 
-#elevator2:hover .line6 {
+#elevator2:hover .line9 {
 	-webkit-animation-play-state: running; 
     animation-play-state: running;	
 }
@@ -238,9 +414,9 @@ html, body {
 .line10{
 	position:relative;
 	width: 8%;
-	height: 46%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 12%;
 	margin-top: -32% ;
 }
@@ -248,61 +424,61 @@ html, body {
 .line11{
 	position:relative;
 	width: 8%;
-	height: 56%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 24%;
-	margin-top: -48% ;
+	margin-top: -61% ;
 }
 
 .line12{
 	position:relative;
 	width: 8%;
-	height: 46%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 36%;
-	margin-top: -58% ;
+	margin-top: -61% ;
 }
 
 .line13{
 	position:relative;
 	width: 8%;
-	height: 30%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
+	border: 1px solid #4f4f4f;
 	margin-left: 48%;
-	margin-top: -48%;
+	margin-top: -61% ;
 }
 
 .line14{
 	position:relative;
 	width: 8%;
-	height: 30%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
-	margin-left: 48%;
-	margin-top: -48%;
+	border: 1px solid #4f4f4f;
+	margin-left: 60%;
+	margin-top: -61% ;
 }
 
 .line15{
 	position:relative;
 	width: 8%;
-	height: 30%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
-	margin-left: 48%;
-	margin-top: -48%;
+	border: 1px solid #4f4f4f;
+	margin-left: 72%;
+	margin-top: -61% ;
 }
 
 .line16{
 	position:relative;
 	width: 8%;
-	height: 30%;
+	height: 60%;
 	background: #303133;
-	border: 2px solid #4f4f4f;
-	margin-left: 48%;
-	margin-top: -48%;
+	border: 1px solid #4f4f4f;
+	margin-left: 84%;
+	margin-top: -61% ;
 }
 
 .street {
@@ -335,11 +511,22 @@ html, body {
 	font-weight: bold;
 	color: #f9f9f9;
 	background-color: #cc1a1a;
-	font-size: 50%;
+	font-size: 70%;
 	width: 50%;
-	height: 15%;
+	height: 85%;
+	top:26%;
+	left:0%;
 	visibility:hidden;
-	border-radius: 10%;
+	text-align: center;
+}
+
+.submit5{
+	position:absolute;
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 70%;
+	left:23%;
+	top:70%;
 	text-align: center;
 }
 
@@ -353,7 +540,7 @@ html, body {
 	width: 5%;
 	height: auto;
 	background: white;
-	margin-top:7%;
+	margin-top:3%;
 	margin-left: 15%;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
 	animation: move2 6s alternate infinite;
@@ -368,7 +555,7 @@ html, body {
 	height: auto;
 	background: white;
 	margin-top:7%;
-	margin-left: 40%;
+	margin-left: 41%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
     animation: move2 6s alternate infinite;
 	-webkit-animation-play-state: paused; 
@@ -381,8 +568,8 @@ html, body {
 	width: 5%;
 	height: auto;
 	background: white;
-	margin-top:7%;
-	margin-left: 65%;
+	margin-top:3%;
+	margin-left: 68%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
     animation: move2 6s alternate infinite;
 	-webkit-animation-play-state: paused; 
@@ -425,11 +612,31 @@ html, body {
 	overflow: hidden;
 	width: 20%;
 	height: 10%;
-	margin-left:30%; 
-	margin-top: 100%;
+	left:38%; 
+	top: 200%;
 	background: #606060;
 	border: 2px solid #515151;
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.text6{
+	position:absolute;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #f9f9f9;
+	background-color: #cc1a1a;
+	font-size: 70%;
+	width: 7%;
+	height: 3%%;
+	display:none;
+	text-align: center;
+	z-index: 100;
+	top:190%;
+	left:35%;
+}
+
+#waitingarea:hover .text6 {
+	display:block;
 }
 
 .circle4{
@@ -516,16 +723,33 @@ html, body {
 	font-weight: bold;
 	color: #f9f9f9;
 	background-color: #cc1a1a;
-	font-size: 50%;
-	width: 50%;
-	height: 15%;
+	font-size: 70%;
+	width: 75%;
+	height: 25%;
 	visibility:hidden;
-	border-radius: 10%;
 	text-align: center;
+	z-index: 100;
+	top:70%;
 }
+
+#playButton{
+	background-color: #cc1a1a;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #f9f9f9;
+	border-width: 0px;
+}
+
 #stairs:hover .text7 {
 	visibility:visible;
+	animation: scale 1s alternate infinite;
 }
+
+@keyframes scale{
+    0%   {transform: scale(0.5);}
+    100%  {transform: scale(1);}
+}
+
 
 .stair1{
 	position:relative;
@@ -613,6 +837,30 @@ html, body {
     left: 400px;
 }
 
+.stick2{
+	position: absolute;
+    overflow: hidden;
+    width: 1%;
+    height: 9%;
+    background: #606060;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+    top: 540px;
+    left: 412px;
+     animation: stickk 2s normal infinite;
+    -webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+}
+
+#swipe1:hover .stick2 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+@keyframes stickk{
+    0%   {height: 9%;}
+    100%  {height: 1%;}
+}
+
 .box2{
 	position:relative;
 	width: 20%;
@@ -643,10 +891,36 @@ html, body {
 	width: 1%;
 	height: 20%;
 	margin-left:70%; 
-	margin-top: 25%;
+	margin-top: 25.5%;
 	background: #606060;
 	border: 2px solid #515151;
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.d1{
+ position:relative;
+ left:0%;
+ top:0%;
+ background:white;
+ width:1%;
+ height: 100%;
+ animation: door 2s normal infinite;
+ -webkit-animation-play-state: paused; 
+ animation-play-state: paused;
+}
+
+@keyframes door{
+  0% {width:0%;}
+  100% {width: 100%;}
+}
+
+#door1:hover .d1 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
+}
+
+#door1:hover .text10 {
+	display:block;
 }
 
 #door2{
@@ -655,7 +929,7 @@ html, body {
 	width: 1%;
 	height: 20%;
 	margin-left:78.5%; 
-	margin-top: -10%;
+	margin-top: -10.5%;
 	background: #606060;
 	border: 2px solid #515151;
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
