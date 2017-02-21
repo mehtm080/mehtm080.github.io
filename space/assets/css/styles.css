@@ -54,8 +54,9 @@ html, body {
     left: 460px;
     width: 200px;
     height:30px;
-    background-color: red;
+    padding: 1%;
     display: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
 }
 
 #swipe1:hover .text9 {
@@ -105,6 +106,7 @@ html, body {
 }
 
 .text1{
+	overflow:hidden;
 	position:absolute;
 	font-family: helvetica;
 	font-weight: bold;
@@ -112,15 +114,45 @@ html, body {
 	background-color: #cc1a1a;
 	font-size: 70%;
 	width: 15%;
-	height: 20%;
+	height: 25%;
 	display: none;
-	text-align: center;
+	text-align: left;
+	padding: 1%;
 	left:40%;
 	z-index: 100;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
 }
 
 .classroom:hover .text1 {
 	display: block;
+}
+
+.clock{
+ position:absolute;
+ width:20%;
+ height:50%;
+ border-radius:50%;
+ background-color: #303133;
+ font-size:70%;
+ left:50%;
+ top:48%;
+ padding:1%;
+ animation: scaleclock 1s alternate infinite;
+}
+
+@keyframes scaleclock{
+    0%   {transform: scale(0.9);}
+    100%  {transform: scale(0.5);}
+}
+
+.countdown{
+	overflow: hidden;
+	text-align:center;
+	position:relative;
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 90%;
+	top: 20%;
 }
 
 .c1{
@@ -363,6 +395,8 @@ html, body {
 	visibility:hidden;
 	text-align: center;
 	z-index: 100;
+	padding: 1%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
 }
 
 .submit5{
@@ -493,6 +527,45 @@ html, body {
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.text4{
+	position:absolute;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #f9f9f9;
+	background-color: #cc1a1a;
+	font-size: 70%;
+	width: 30%;
+	height: 3%;
+	top:40%;
+	left:7%;
+	visibility:hidden;
+	text-align: center;
+	padding: 1%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
+.street:hover .text4 {
+	visibility:visible;
+}
+
+.arrow{
+	position:absolute;
+	width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right:20px solid red;
+  animation: scalearrow 1s alternate infinite;
+  margin-top:160%;
+  left:0%;
+
+}
+
+@keyframes scalearrow{
+    0%   {transform: scale(0.5);}
+    100%  {transform: scale(1);}
+}
+
 .securitydesk {
     margin-top: 185px;
     margin-left: 250px;
@@ -518,6 +591,8 @@ html, body {
 	left:0%;
 	visibility:hidden;
 	text-align: center;
+	padding: 1%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
 }
 
 .submit5{
@@ -528,6 +603,7 @@ html, body {
 	left:23%;
 	top:70%;
 	text-align: center;
+	width:;
 }
 
 .securitydesk:hover .text5 {
@@ -633,6 +709,8 @@ html, body {
 	z-index: 100;
 	top:190%;
 	left:35%;
+	padding: 1%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
 }
 
 #waitingarea:hover .text6 {
@@ -730,6 +808,8 @@ html, body {
 	text-align: center;
 	z-index: 100;
 	top:70%;
+	padding: 1%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
 }
 
 #playButton{
@@ -919,12 +999,29 @@ html, body {
     animation-play-state: running;	
 }
 
+.text10{
+	position:relative;
+	margin-left: 58%;
+	margin-top:-10%;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #f9f9f9;
+	background-color: #cc1a1a;
+	font-size: 70%;
+	width: 10%;
+	height: 3%%;
+	display:none;
+	text-align: center;
+	padding: 1%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.69);
+}
+
 #door1:hover .text10 {
 	display:block;
 }
 
 #door2{
-	position:relative;
+	position:absolute;
 	overflow: hidden;
 	width: 1%;
 	height: 20%;
@@ -933,4 +1030,26 @@ html, body {
 	background: #606060;
 	border: 2px solid #515151;
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.d2{
+ position:relative;
+ left:0%;
+ top:0%;
+ background:white;
+ width:1%;
+ height: 100%;
+ animation: door2 2s normal infinite;
+ -webkit-animation-play-state: paused; 
+ animation-play-state: paused;
+}
+
+@keyframes door2{
+  0% {width:0%;}
+  100% {width: 100%;}
+}
+
+#door2:hover .d2 {
+	-webkit-animation-play-state: running; 
+    animation-play-state: running;	
 }

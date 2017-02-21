@@ -85,6 +85,11 @@ $("#swipe2").hover(function() {
   $(".stick2").toggle();
 })
 
+$("#door1").hover(function() {
+  console.log("test");
+  $(".text10").toggle();
+})
+
 $('.c1,.c2,.c3,.c4,.c5,.c6,.c7').mouseover(function(){
     $(this).css('background-color','red');
   });
@@ -111,6 +116,24 @@ $('.d1,.d2').mouseover(function(){
 
 $('.text1,.text2,.text3,.text4,.text5,.text6,.text7,.text8,.text9,.text10').mouseover(function(){
   });
+
+$("#playButton").mouseenter(function() {
+  document.getElementById('myTune').play();
+})
+
+$("#playButton").mouseleave(function() {
+  document.getElementById('myTune').pause();
+});
+
+countdown = 50;
+
+setInterval(function(){ 
+  countdown--;
+  $(".countdown").html(countdown);
+  console.log(countdown); 
+}, 1900)
+
+
 
 
 
