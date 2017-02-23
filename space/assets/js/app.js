@@ -98,6 +98,10 @@ $('.line1,.line2,.line3,.line4,.line5,.line6,.line7,.line8,.line9,.line10,.line1
     $(this).css('background-color','red');
   });
 
+$('.arrow1,.arrow2,.arrow3,.arrow4,.arrow5,.arrow6,.arrow7,.arrow8,.arrow9,.arrow10,.arrow11,.arrow12,.arrow13,.arrow14,.arrow15').mouseover(function(){
+    $(this).css('border-color','transparent red transparent');
+  });
+
 $('.circle1,.circle2,.circle3').mouseover(function(){
     $(this).css('background-color','red');
   });
@@ -132,7 +136,6 @@ setInterval(function(){
   $(".countdown").html(countdown);
   console.log(countdown); 
 }, 1900)
-
 
 
 
