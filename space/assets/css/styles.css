@@ -148,11 +148,13 @@ html, body {
 .countdown{
 	overflow: hidden;
 	text-align:center;
-	position:relative;
 	font-family: helvetica;
 	font-weight: bold;
 	font-size: 90%;
-	top: 20%;
+	top: 50%;
+	left:50%;
+	position:absolute;
+	transform: translate(-50%,-50%);
 }
 
 .c1{
@@ -1052,4 +1054,10 @@ html, body {
 #door2:hover .d2 {
 	-webkit-animation-play-state: running; 
     animation-play-state: running;	
+}
+
+input { 
+	outline: none; 
+	border: 1px solid #000;
+	background: #fff;
 }
