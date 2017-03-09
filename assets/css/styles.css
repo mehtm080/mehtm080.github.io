@@ -49,6 +49,14 @@ html, body {
 	text-align: center;
 }
 
+.quiz1{
+	margin-top: 10px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
 a{
 	text-decoration: none;
 	color:#586268;

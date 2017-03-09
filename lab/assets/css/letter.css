@@ -52,13 +52,13 @@ body{
 	border-radius:15px;
 }
 
-.vertical1{
+.vertical {
 	height: 100%;
 	width: 20%;
 	background:#000;
 }
 
-.horizontal1{
+.horizontal {
 	height: 15%;
 	width: 100%;
 	background:#000;
