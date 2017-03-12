@@ -1,0 +1,817 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #2b2b2b;
+}
+
+
+.rectangle{
+	width: 100%;
+	height: 100%;
+	background: black;
+	overflow:hidden;
+	position:relative;
+}
+
+
+.typefacedesign{
+    font-size: 50px;
+	color: #2d2d2d;
+	font-family: economica, futura, helvetica;
+	text-align: center;
+	position:relative;
+}
+
+a{
+    text-decoration:none;
+    color: white;
+}
+
+.fontspecimen{
+    font-size: 50px;
+	color: #2d2d2d;
+	font-family: economica, futura, helvetica;
+	text-align: center;
+	top: 1%;
+	position:relative;
+}
+
+.recipe{
+    font-size: 50px;
+	color: #2d2d2d;
+	font-family: economica, futura, helvetica;
+	text-align: center;
+	margin-top: 0%;
+	position:relative;
+}
+
+.recipebook{
+    font-size: 50px;
+	color: #2d2d2d;
+	font-family: economica, futura, helvetica;
+	text-align: center;
+	margin-top: 0%;
+	position:relative;
+}
+
+.chapbook{
+    font-size: 50px;
+	color: #2d2d2d;
+	font-family: economica, futura, helvetica;
+	text-align: center;
+	margin-top: 0%;
+	position:relative;
+}
+
+.wikibook{
+    font-size: 50px;
+	color: #2d2d2d;
+	font-family: economica, futura, helvetica;
+	text-align: center;
+	margin-top: 0%;
+	position:relative;
+}
+
+.coasters{
+    font-size: 50px;
+	color: #2d2d2d;
+	font-family: economica, futura, helvetica;
+	text-align: center;
+	margin-top: 0%;
+	position:relative;
+}
+
+#typefacedesign{
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	position: relative;
+	margin-top: 5px; 
+}
+
+#typefacedesign2{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	border-bottom: 2px solid #e2e2e2;
+}
+
+.typefacedesigntext{
+	position: relative;
+	font-family: economica, helvetica;
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+	font-size: 80px;
+	width:100%;
+	opacity: 0.2;
+}
+
+#typefacedesignimg{
+	height:90%;
+	width:70%;
+}
+
+#typefacedesignimg:hover {
+     transform:scale(1.20);
+}
+
+
+#fontspecimen{
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	position: relative;
+}
+
+#fontspecimen2{
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	border-bottom: 1px solid #d1d3d6;
+	position: relative;
+}
+
+.fontspecimentext{
+	position: relative;
+	font-family: economica, helvetica;
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+	font-size: 80px;
+	width:100%;
+	opacity: 0.2;
+}
+
+#fontspecimenimg1{
+	position:absolute;
+	margin-left: 20%;
+	width: 30%;
+	height: auto;
+	display:inline-block;
+	
+}
+
+#fontspecimenimg2{
+	position:absolute;
+	margin-left: 50%;
+	margin-top: 0%;
+	width: 30%;
+	height: auto;
+	display:inline-block;
+	left:5%;
+}
+
+#fontspecimenimg1:hover {
+     transform:scale(1.20);
+}
+
+#fontspecimenimg2:hover {
+     transform:scale(1.20);
+}
+
+#recipe{
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	position: relative;
+}
+
+#recipe2{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	border-bottom: 1px solid #d1d3d6;
+}
+
+.recipetext{
+	position: relative;
+	font-family: economica, helvetica;
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+	font-size: 80px;
+	width:100%;
+	opacity: 0.2;
+}
+
+#recipeimg1{
+	position: absolute;
+	top:10px;
+	margin-left: 30%;
+	width: 35%;
+	height: auto;
+	float:left;
+}
+
+#recipeimg1:hover {
+     transform:scale(1.20);
+}
+
+#recipebook{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	position: relative;
+}
+
+#recipebook2{
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	border-bottom: 1px solid #d1d3d6;
+}
+
+.recipebooktext{
+	position: relative;
+	font-family: economica, helvetica;
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+	font-size: 80px;
+	width:100%;
+	opacity: 0.2;
+}
+
+#recipebookimg1{
+	position:absolute;
+	margin-left: 20%;
+	margin-top: -10px;
+	width: 30%;
+	height: auto;
+	display:inline-block;
+}
+
+#recipebookimg2{
+	position:absolute;
+	margin-left: 50%;
+	margin-top: -10px;
+	width: 30%;
+	height: auto;
+	display:inline-block;
+	left:5%;
+}
+
+#recipebookimg1:hover {
+     transform:scale(1.20);
+}
+
+#recipebookimg2:hover {
+     transform:scale(1.20);
+}
+
+#chapbook{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	position: relative;
+}
+
+#chapbook2{
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	border-bottom: 1px solid #d1d3d6;
+}
+
+.chapbooktext{
+	position: relative;
+	font-family: economica, helvetica;
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+	font-size: 80px;
+	width:100%;
+	opacity: 0.2;
+}
+
+#chapbookimg1{
+	position:absolute;
+	margin-left: 20%;
+	width: 30%;
+	height: auto;
+	display:inline-block;
+	
+}
+
+#chapbookimg2{
+	position:absolute;
+	margin-left: 50%;
+	margin-top: 0%;
+	width: 30%;
+	height: auto;
+	display:inline-block;
+	left:5%;
+}
+
+#chapbookimg1:hover {
+     transform:scale(1.20);
+}
+
+#wikibook{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+}
+
+#wikibook2{
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	border-bottom: 1px solid #d1d3d6;
+}
+
+.wikibooktext{
+	position: relative;
+	font-family: economica, helvetica;
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+	font-size: 80px;
+	width:100%;
+	opacity: 0.2;
+}
+
+#wikibookimg1{
+	position:absolute;
+	margin-left: 20%;
+	width: 30%;
+	height: auto;
+	display:inline-block;
+	
+}
+
+#wikibookimg2{
+	position:absolute;
+	margin-left: 50%;
+	margin-top: 0%;
+	width: 30%;
+	height: auto;
+	display:inline-block;
+	left:5%;
+}
+
+#wikibookimg1:hover {
+     transform:scale(1.20);
+}
+
+#wikibookimg2:hover {
+     transform:scale(1.20);
+}
+
+#coasters{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+}
+
+#coasters2{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background: white;
+	overflow:hidden;
+	border-bottom: 1px solid #d1d3d6;
+}
+
+.coasterstext{
+	position: relative;
+	font-family: economica,helvetica;
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+	font-size: 80px;
+	width:100%;
+	opacity: 0.2;
+}
+
+#coastersimg1{
+	position:absolute;
+	margin-left: 40%;
+	width: 30%;
+	height: auto;
+	display:inline-block;
+}
+
+#coastersimg1:hover {
+     transform:scale(1.30);
+}
+
+
+
+#slide{
+	width:50%;
+	height:50%;
+	max-width: 50%;
+	max-height: 50%;
+	margin-top: 10%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    overflow:hidden;
+}
+
+#slide > div {
+	position:relative;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+#slide img{
+	position:absolute;
+    margin:0 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#slide:hover {
+     transform:scale(1.20);
+}
+
+#slide1{
+	width:50%;
+	height:50%;
+	max-width: 50%;
+	max-height: 50%;
+	margin-top: 10%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    overflow:hidden;
+}
+
+#slide1 > div {
+	position:relative;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+#slide1 img{
+	position:absolute;
+    margin:0 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#slide1:hover {
+     transform:scale(1.20);
+}
+
+#slide2{
+	width:50%;
+	height:50%;
+	max-width: 50%;
+	max-height: 50%;
+	margin-top: 10%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    overflow:hidden;
+}
+
+#slide2 > div {
+	position:relative;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+#slide2 img{
+	position:absolute;
+    margin:0 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#slide2:hover {
+     transform:scale(1.20);
+}
+
+#slide3{
+	width:50%;
+	height:50%;
+	max-width: 50%;
+	max-height: 50%;
+	margin-top: 10%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    overflow:hidden;
+}
+
+#slide3 > div {
+	position:relative;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+#slide3 img{
+	position:absolute;
+    margin:0 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#slide3:hover {
+     transform:scale(1.20);
+}
+
+#slide4{
+	width:50%;
+	height:50%;
+	max-width: 50%;
+	max-height: 50%;
+	margin-top: 10%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    overflow:hidden;
+}
+
+#slide4 > div {
+	position:relative;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+#slide4 img{
+	position:absolute;
+    margin:0 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#slide4:hover {
+     transform:scale(1.20);
+}
+
+#slide5{
+	width:50%;
+	height:50%;
+	max-width: 50%;
+	max-height: 50%;
+	margin-top: 10%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    overflow:hidden;
+}
+
+#slide5 > div {
+	position:relative;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+#slide5 img{
+	position:absolute;
+    margin:0 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#slide5:hover {
+     transform:scale(1.20);
+}
+
+#slide6{
+	width:50%;
+	height:50%;
+	max-width: 50%;
+	max-height: 50%;
+	margin-top: 10%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    overflow:hidden;
+}
+
+#slide6 > div {
+	position:relative;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+#slide6 img{
+	position:absolute;
+    margin:0 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#slide6:hover {
+     transform:scale(1.20);
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+.textbox1{
+	position: absolute;
+	width: 10%;
+	height:auto;
+	border-style: ridge;
+    border-bottom-color: #a0a0a0;
+    border-top-color: #a0a0a0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+	left: 84%;
+	font-family: playfair display, helvetica;
+	font-weight: bold;
+	font-size: 30%;
+	overflow:hidden;
+	padding: 1%;
+}
+
+.textbox2{
+	position: absolute;
+	width: 10%;
+	height:auto;
+	border-style: ridge;
+    border-bottom-color: #a0a0a0;
+    border-top-color: #a0a0a0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+	left: 5%;
+	top:10px;
+	font-family: playfair display, helvetica;
+	font-weight: bold;
+	font-size: 30%;
+	overflow:hidden;
+	padding: 1%;
+}
+
+.textbox3{
+	position: absolute;
+	width: 10%;
+	height:auto;
+	border-style: ridge;
+    border-bottom-color: #a0a0a0;
+    border-top-color: #a0a0a0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+	left: 84%;
+	top:2%;
+	font-family: playfair display, helvetica;
+	font-weight: bold;
+	font-size: 30%;
+	overflow:hidden;
+	padding: 1%;
+}
+
+.textbox4{
+	position: absolute;
+	width: 10%;
+	height:auto;
+	border-style: ridge;
+    border-bottom-color: #a0a0a0;
+    border-top-color: #a0a0a0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+	left: 5%;
+	top:20px;
+	font-family: playfair display, helvetica;
+	font-weight: bold;
+	font-size: 30%;
+	overflow:hidden;
+	padding: 1%;
+}
+
+.textbox5{
+	position: absolute;
+	width: 10%;
+	height:auto;
+	border-style: ridge;
+    border-bottom-color: #a0a0a0;
+    border-top-color: #a0a0a0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+	left: 5%;
+	top:20px;
+	font-family: playfair display, helvetica;
+	font-weight: bold;
+	font-size: 30%;
+	overflow:hidden;
+	padding: 1%;
+}
+
+.textbox6{
+	position: absolute;
+	width: 10%;
+	height:auto;
+	border-style: ridge;
+    border-bottom-color: #a0a0a0;
+    border-top-color: #a0a0a0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+	left: 5%;
+	top:20px;
+	font-family: playfair display, helvetica;
+	font-weight: bold;
+	font-size: 30%;
+	overflow:hidden;
+	padding: 1%;
+}
+
+.textbox7{
+	position: absolute;
+	width: 10%;
+	height:auto;
+	border-style: ridge;
+    border-bottom-color: #a0a0a0;
+    border-top-color: #a0a0a0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+	left: 84%;
+	top:20px;
+	font-family: playfair display, helvetica;
+	font-weight: bold;
+	font-size: 30%;
+	overflow:hidden;
+	padding: 1%;
+}
+
+
+
