@@ -20,13 +20,14 @@ $('.item').click(function() {
 
 
 
-	if (cash > amount) {
+	if (cash >= amount) {
+
 	cash = cash - amount;
 	update_wallet(cash);
-	$('purchases').append(item + ' , ');
+	$('.purchases').append(item + ',');
 	}
 	else{
-		alert('not enough money')
+		alert('not enough money');
 	}
 
 });
