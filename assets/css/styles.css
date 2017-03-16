@@ -167,9 +167,18 @@ a{
 	text-align: center;
 }
 
+.final{
+	position:relative;
+	margin-top: -20px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
 .typeface{
 	position: relative;
-	margin-top:50px;
+	margin-top:90px;
 }
 
 .t{
@@ -268,6 +277,32 @@ a{
   infinite ease-in alternate;
 }
 
+.sketches2{
+	position:relative;
+	margin-top: 0px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
+.font{
+	position:relative;
+	margin-top: -20px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
+.fonteditor{
+	position:relative;
+	margin-top: -20px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
 .chance{
 	position: relative;
 	margin-top:0px;

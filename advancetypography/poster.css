@@ -1,0 +1,144 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+.header{
+	width: 100%;
+	height:55px;
+	background-color: black;
+	opacity: 0.9;
+	position:relative;
+	top:0;
+}
+
+.home{
+	font-family: Arial;
+	color:white;
+	position:absolute;
+	top:10px;
+	font-size: 30px;
+	left: 10px;
+	cursor:pointer;
+}
+
+.posters{
+	font-family: Arial;
+	color:white;
+	position:absolute;
+	top:10px;
+	font-size: 30px;
+	left: 150px;
+	cursor:pointer;
+}
+
+.invite{
+	font-family: Arial;
+	color:white;
+	position:absolute;
+	top:10px;
+	font-size: 30px;
+	left: 350px;
+	cursor:pointer;
+}
+
+.schedule{
+	font-family: Arial;
+	color:white;
+	position:absolute;
+	top:10px;
+	font-size: 30px;
+	left: 500px;
+	cursor:pointer;
+}
+
+.wayfinding{
+	font-family: Arial;
+	color:white;
+	position:absolute;
+	top:10px;
+	font-size: 30px;
+	left: 735px;
+	cursor:pointer;
+}
+
+.home:hover{
+	background-color: #103063;
+}
+
+.posters:hover{
+	background-color: #103063;
+}
+
+.invite:hover{
+	background-color: #103063;
+}
+
+.schedule:hover{
+	background-color: #103063;
+}
+
+.wayfinding:hover{
+	background-color: #103063;
+}
+
+a{
+	text-decoration: none;
+	color:yellow;
+}
+
+#rectangle{
+	width: 100%;
+	height: 500%;
+	background-color: black;
+}
+
+#poster{
+	position:relative;
+	height:600px;
+	width:400px;
+	left:30%;
+	top:90px;
+}
+
+#poster:hover {
+     transform:scale(1.10);
+}
+
+#poster2{
+	position:relative;
+	height:600px;
+	width:400px;
+	left:30%;
+	top:200px;
+}
+
+#poster2:hover {
+     transform:scale(1.10);
+}
+#poster3{
+	position:relative;
+	height:600px;
+	width:400px;
+	left:30%;
+	top:400px;
+}
+
+#poster3:hover {
+     transform:scale(1.10);
+}
+#poster4{
+	position:relative;
+	height:600px;
+	width:400px;
+	left:30%;
+	top:600px;
+}
+
+#poster4:hover {
+     transform:scale(1.10);
+}
+
