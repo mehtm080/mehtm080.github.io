@@ -1,0 +1,14 @@
+#text4
+{
+box-shadow:1px 1px 45px #333;
+transition: 200ms all ease;
+border:none;
+padding: 5px 5px;
+
+}
+#text4:hover
+{
+margin:-5px 0 0 -5px;
+height:29px;
+width:250px;
+}
