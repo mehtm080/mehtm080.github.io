@@ -7,6 +7,17 @@ html, body {
 	cursor: url(../img/id.png), default;
 }
 
+button{
+	position:absolute;
+	border-radius: 5%;
+	left: 50%;
+	width: 15%;
+	font-family: helvetica;
+	background-color: red;
+	color:white;
+	border-width: 0;
+}
+
 #swipe1 {
     position: absolute;
     overflow: hidden;

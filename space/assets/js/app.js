@@ -138,5 +138,7 @@ setInterval(function(){
 }, 1900)
 
 
-
+function myFunction() {
+    location.reload();
+}
 

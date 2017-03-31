@@ -65,23 +65,23 @@ html, body {
 }
 
 .home:hover{
-	background-color: #103063;
+	background-color: yellow;
 }
 
 .posters:hover{
-	background-color: #103063;
+	background-color: yellow;
 }
 
 .invite:hover{
-	background-color: #103063;
+	background-color: yellow;
 }
 
 .schedule:hover{
-	background-color: #103063;
+	background-color: yellow;
 }
 
 .wayfinding:hover{
-	background-color: #103063;
+	background-color: yellow;
 }
 .rectangle{
 	width: 100%;
@@ -128,3 +128,16 @@ a{
 	color:yellow;
 }
 
+.footer{
+	position:relative;
+	width: 100%;
+	height: 10%;
+	background-color: black;
+	font-size: 20px;
+	font-family: impact;
+}
+
+.text2{
+	position:absolute;
+	top:2%;
+}

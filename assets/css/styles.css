@@ -65,6 +65,30 @@ html, body {
 	text-align: center;
 }
 
+.js{
+	margin-top: 10px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
+.js2{
+	margin-top: 10px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
+.js3{
+	margin-top: 10px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
 a{
 	text-decoration: none;
 	color:#586268;
@@ -72,7 +96,7 @@ a{
 
 .space{
 	position: relative;
-	margin-top:20px;
+	margin-top:70px;
 }
 
 .s{
@@ -178,7 +202,7 @@ a{
 
 .typeface{
 	position: relative;
-	margin-top:90px;
+	margin-top:300px;
 }
 
 .t{
