@@ -1,58 +1,509 @@
-body{
+html, body{
 	margin:50px;
 	padding:0;
 	font-size:0;
 }
 
-#rectangle{
+#rectangle1{
+	position:relative;
 	width: 100%;
-	height: 100%;
-	background: white;
+	height: 600%;
+	background-color: white;
 }
 
-#text1{
+.type{
 	position:absolute;
-	margin-top: 20%;
-	margin-left: 30%;
+	margin-top: 0%;
+	margin-left: -40px;
 	box-shadow:1px 1px 5px #333;
 	transition: 200ms all ease;
 	border:none;
-	padding: 25px 105px;
+	padding: 80px 2px;
 	outline: none;
+	background-color:black;
+	animation: type 1s normal infinite;
+    -webkit-animation-play-state: play; 
+    animation-play-state: play;
 }
 
-#text1:hover{
-	position:relative;
-	margin:20% 0 0 30%;
-	height:29px;
-	width:250px;
-	outline: none;
+@keyframes type {
+  0% {
+    opacity:0; 
+  }
+
+  100% {
+    opacity:1;
+  }
 }
 
-.button {
-  	position:absolute;
-	margin:30% 0 0 30%;
-  	background: #dfe9f0;
-  	background-image: -webkit-linear-gradient(top, #4d4d4d, #131414);
-  	background-image: linear-gradient(to bottom, #4d4d4d, #131414);
-  	border-radius: 4px;
-  	font-family: Arial;
-  	color: #ffffff;
-  	font-size: 10px;
-  	padding: 5px 10px 5px 10px;
-  	border: solid #333333 0px;
-  	text-decoration: none;
+body:active .type{
+ opacity:0;
 }
 
-.button:hover {
+.instructions{
+	position:fixed;
+	top:25px;
+	left:87%;
+	height:100px;
+	width: 55px;
+	background-color: white;
+}
+
+h1{
 	position:absolute;
-	margin:0 0 0 0;
-  	background: #4d4d4d;
-  	background-image: -webkit-linear-gradient(top, #4d4d4d, #131414);
-  	background-image: linear-gradient(to bottom, #4d4d4d, #131414);
-  	text-decoration: none;
+	color: grey;
+	top:0px;
+	font-size: 10px;
+	font-family: Comic Sans MS;
+	font-weight: 1px;
+	left:0%;
+	text-align:center;
 }
 
+.arrow {
+  	position:absolute;
+  	top:65%;
+  	left:30%;
+  	width: 60%;
+  	animation: arrow 2s normal infinite;
+    -webkit-animation-play-state: play; 
+    animation-play-state: play;
+}
+
+@keyframes arrow {
+  0% {
+    opacity:0; 
+  }
+50% {
+    opacity:1;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.button{
+	position:absolute;
+  	top:478px;
+  	left:102%;
+  	width: 45px;
+  	display: hidden;
+}
+
+.tools{
+	position: fixed;
+	width: 66px;
+	height:420px;
+	top:10%;
+	left:92%;
+	background-color: black;
+	box-shadow:1px 1px 5px #333;
+	border: 2px solid white;
+    outline-color: white;
+    padding:0;
+    z-index: 10000;
+}
+
+.background-color{
+	position:absolute;
+	border: 2px solid white;
+    outline-color: white;
+	width: 52px;
+	height: 22px;
+	left: 7%;
+	top: 1%;
+}
+
+.color1{
+	position:absolute;
+	background-color: #ffff66;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 8%;
+	z-index: 10000;
+}
+
+.color1.ui-draggable-dragging{
+	position:absolute;
+	background-color: #ffff66;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 8%;
+}
+
+.color1:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.color2{
+	position:absolute;
+	background-color: #fc4300;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 53%;
+	top: 8%;
+}
+
+.color2:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.color3{
+	position:absolute;
+	background-color:#fc0000;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 15%;
+}
+
+.color3:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.color4{
+	position:absolute;
+	background-color: #fc005c;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 53%;
+	top: 15%;
+}
+
+.color4:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.color5{
+	position:absolute;
+	background-color: #00fc10;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 22%;
+}
+
+.color5:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.color6{
+	position:absolute;
+	background-color: #00f2ff;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 53%;
+	top: 22%;
+}
+
+.color6:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.fill-color{
+	position:absolute;
+	background-color:white;
+	width: 55px;
+	height: 22px;
+	left: 7%;
+	top: 30.5%;
+}
+
+.fill1{
+	position:absolute;
+	background-color: #ffdd00;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 37%;
+}
+
+.fill2{
+	position:absolute;
+	background-color: #ff5d00;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 53%;
+	top: 37%;
+}
+
+.fill3{
+	position:absolute;
+	background-color: #a80046;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 44%;
+}
+
+.fill4{
+	position:absolute;
+	background-color: #539601;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 53%;
+	top: 44%;
+}
+
+.fill5{
+	position:absolute;
+	background-color: #9400ff;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 51%;
+}
+
+.fill6{
+	position:absolute;
+	background-color: #3300ff;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 53%;
+	top: 51%;
+}
+
+.textures{
+	position:absolute;
+	background-image: url(../img/textures.jpg);
+	background-size: 55px 22px;
+	cursor:pointer;
+	width: 55px;
+	height: 22px;
+	left: 7%;
+	top: 59.5%;
+}
+
+.texture1{
+	position:absolute;
+	background-image: url(../img/texture1.jpg);
+	background-size: 25px 25px;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 66%;
+}
+
+.texture1:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.texture2{
+	position:absolute;
+	background-image: url(../img/texture2.jpg);
+	background-size: 25px 25px;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 53%;
+	top: 66%;
+}
+
+.tecture2:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.texture3{
+	position:absolute;
+	background-image: url(../img/texture3.jpg);
+	background-size: 25px 25px;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 73%;
+}
+
+.tecture3:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.texture4{
+	position:absolute;
+	background-image: url(../img/texture4.jpg);
+	background-size: 25px 25px;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 53%;
+	top: 73%;
+}
+
+.tecture4:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.texture5{
+	position:absolute;
+	background-image: url(../img/texture5.png);
+	background-size: 25px 25px;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 7%;
+	top: 80%;
+}
+
+.tecture5:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.texture6{
+	position:absolute;
+	background-image: url(../img/texture6.png);
+	background-size: 25px 25px;
+	cursor:pointer;
+	width: 25px;
+	height: 25px;
+	left: 53%;
+	top: 80%;
+}
+
+.tecture6:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.reload {
+  	position:absolute;
+  	top:90%;
+  	left:22%;
+  	width: 35px;
+}
+
+.weight-set{
+	position:fixed;
+	left:30%;
+	top:90%;
+	height:5px;
+	width: 280px;
+	background-color: black;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 40%;
+  margin: 9.3px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #000000;
+  border-radius: 0px;
+  border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 22px;
+  width: 22px;
+  border-radius: 0px;
+  background: #000000;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9.3px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #000000;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #000000;
+  border-radius: 0px;
+  border: 0px solid #000101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 22px;
+  width: 22px;
+  border-radius: 0px;
+  background: #000000;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #000000;
+  border: 0px solid #000101;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #000000;
+  border: 0px solid #000101;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 22px;
+  width: 22px;
+  border-radius: 0px;
+  background: #000000;
+  cursor: pointer;
+  height: 3.4px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #000000;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #000000;
+}
 
 
 .all-letters {
@@ -70,8 +521,9 @@ body{
 	display:inline-block;
 }
 
-.editing {
-	background-color: yellow;
+.editing{
+	background-color: white;
+	
 }
 
 /* 100% */
@@ -1367,7 +1819,7 @@ body{
 .k-vertical-right-top{
 	position:absolute;
 	height: 40%;
-	width: 44%;
+	width: 42%;
 	background:#000;
 	right:5%;
 	top:0%;
@@ -1386,7 +1838,7 @@ body{
 .ninety .k-vertical-right-top{
 	position:absolute;
 	height: 40%;
-	width: 39.6%;
+	width: 37.2%;
 	background:#000;
 	right:5%;
 	top:0%;
@@ -1405,7 +1857,7 @@ body{
 .eighty .k-vertical-right-top{
 	position:absolute;
 	height: 40%;
-	width: 35.2%;
+	width: 32.2%;
 	background:#000;
 	right:5%;
 	top:0%;
@@ -1424,7 +1876,7 @@ body{
 .seventy .k-vertical-right-top{
 	position:absolute;
 	height: 38%;
-	width: 30.8%;
+	width: 27.8%;
 	background:#000;
 	right:5%;
 	top:0%;
