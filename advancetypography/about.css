@@ -75,7 +75,7 @@ html, body {
 	position:absolute;
 	top:7px;
 	font-size: 30px;
-	left: 1140px;
+	left: 1150px;
 	cursor:pointer;
 	padding: 5px;
 }
@@ -109,21 +109,17 @@ a{
 	color:white;
 }
 
-
-.rectangle{
-	width:100%;
-	height:120%;
+#rectangle{
+	width: 100%;
+	height: 100%;
 	background-color: black;
 }
 
-#invite{
-	position:relative;
-	height:600px;
-	width:400px;
+.note{
+	position: absolute;
+	width: 40%;
+	height:auto;
 	left:30%;
-	top:90px;
-}
-
-#invite:hover {
-     transform:scale(1.10);
+	top: 50%;
+	font-family: Arial;
 }

@@ -104,26 +104,68 @@ html, body {
 	background-color: #282828;
 }
 
+
 a{
 	text-decoration: none;
 	color:white;
 }
 
-
-.rectangle{
-	width:100%;
-	height:120%;
+#rectangle{
+	width: 100%;
+	height: 360%;
 	background-color: black;
 }
 
-#invite{
-	position:relative;
-	height:600px;
-	width:400px;
-	left:30%;
-	top:90px;
+.background{
+	position: absolute;
+	width:100%;
+	height:100%;
 }
 
-#invite:hover {
+#img{
+	position:absolute;
+	top: 20%;
+	left: 25%;
+	width:50%;
+	height:auto;
+}
+
+#img:hover {
+     transform:scale(1.10);
+}
+
+#img2{
+	position:absolute;
+	top: 100%;
+	left: 25%;
+	width:50%;
+	height:auto;
+}
+
+#img2:hover {
+     transform:scale(1.10);
+}
+
+#img3{
+	position:absolute;
+	top: 180%;
+	left: 25%;
+	width:50%;
+	height:auto;
+}
+
+#img3:hover {
+     transform:scale(1.10);
+}
+
+#img4{
+	position:absolute;
+	top: 260%;
+	left: 25%;
+	width:50%;
+	height:auto;
+}
+
+#img4:hover {
      transform:scale(1.10);
 }

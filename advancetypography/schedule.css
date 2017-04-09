@@ -111,88 +111,104 @@ a{
 
 #rectangle{
 	width: 100%;
-	height: 900%;
+	height: 100%;
 	background-color: black;
 }
 
-#poster{
-	position:relative;
-	height:600px;
-	width:400px;
-	left:30%;
-	top:90px;
+.background{
+	position: absolute;
+	width:100%;
+	height:100%;
 }
 
-#poster:hover {
-     transform:scale(1.10);
+.box{
+	position: absolute;
+	background-color: none;
+	width: 40%;
+	height:100%;
+	left: 30%;
 }
 
-#poster2{
-	position:relative;
-	height:600px;
-	width:400px;
-	left:30%;
-	top:200px;
+.day1{
+	position: absolute;
+	top: 10%;
+	font-size: 30px;
+	font-family: Arial; 
+	font-weight: 10px;
+	text-align: center;
+	width:100%;
+	background-color: #272828;
+	padding: 1px;
 }
 
-#poster2:hover {
-     transform:scale(1.10);
-}
-#poster3{
-	position:relative;
-	height:600px;
-	width:400px;
-	left:30%;
-	top:400px;
-}
-
-#poster3:hover {
-     transform:scale(1.10);
-}
-#poster4{
-	position:relative;
-	height:600px;
-	width:400px;
-	left:30%;
-	top:600px;
+.day2{
+	position: absolute;
+	top: 25%;
+	font-size: 30px;
+	font-family: Arial; 
+	font-weight: 5px;
+	text-align: center;
+	width:100%;
+	background-color: #272828;
+	padding: 1px;
 }
 
-#poster4:hover {
-     transform:scale(1.10);
-}
-#poster5{
-	position:relative;
-	height:600px;
-	width:400px;
-	left:30%;
-	top:800px;
-}
-
-#poster5:hover {
-     transform:scale(1.10);
+.day3{
+	position: absolute;
+	top: 40%;
+	font-size: 30px;
+	font-family: Arial; 
+	font-weight: 5px;
+	text-align: center;
+	width:100%;
+	background-color: #272828;
+	padding: 1px;
 }
 
-#poster6{
-	position:relative;
-	height:600px;
-	width:400px;
-	left:30%;
-	top:1000px;
+.day4{
+	position: absolute;
+	top: 55%;
+	font-size: 30px;
+	font-family: Arial; 
+	font-weight: 5px;
+	text-align: center;
+	width:100%;
+	background-color: #272828;
+	padding: 1px;
 }
 
-#poster6:hover {
-     transform:scale(1.10);
+.day5{
+	position: absolute;
+	top: 70%;
+	font-size: 30px;
+	font-family: Arial; 
+	font-weight: 5px;
+	text-align: center;
+	width:100%;
+	background-color: #272828;
+	padding: 1px;
 }
 
-#poster7{
-	position:relative;
-	height:600px;
-	width:400px;
-	left:30%;
-	top:1200px;
+.day6{
+	position: absolute;
+	top: 85%;
+	font-size: 30px;
+	font-family: Arial; 
+	font-weight: 5px;
+	text-align: center;
+	width:100%;
+	background-color: #272828;
+	padding: 1px;
 }
 
-#poster7:hover {
-     transform:scale(1.10);
+.day7{
+	position: absolute;
+	top: 100%;
+	font-size: 30px;
+	font-family: Arial; 
+	font-weight: 5px;
+	text-align: center;
+	width:100%;
+	background-color: #272828;
+	padding: 1px;
 }
-

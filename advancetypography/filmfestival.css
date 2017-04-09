@@ -69,6 +69,17 @@ html, body {
 	padding: 5px;
 }
 
+.about{
+	font-family: Arial;
+	color:white;
+	position:absolute;
+	top:7px;
+	font-size: 30px;
+	left: 1140px;
+	cursor:pointer;
+	padding: 5px;
+}
+
 .home:hover{
 	background-color: #282828;
 }
@@ -88,6 +99,11 @@ html, body {
 .wayfinding:hover{
 	background-color: #282828;
 }
+
+.about:hover{
+	background-color: #282828;
+}
+
 .rectangle{
 	width: 100%;
 	height: 100%;
@@ -96,7 +112,7 @@ html, body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 956px 650px;
-	background-color: #00491f;
+	background-color: #4b7ba4;
 }
 
 
