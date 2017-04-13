@@ -1,21 +1,32 @@
-$(window).keypress(function(e) {
+$(window).keyup(function(e) {
+
+      if(e.keyCode == 8) {
+      console.log($("body").last());
+        $(".append-wrapper .letter").last().remove();
+    }
 
 	$('.type').hide();
+if(e.which == 32) { 
+  e.preventDefault();
+      $(".append-wrapper").append($(".space-marker").clone().removeClass("space-marker"));
 
+}
 
 	console.log(e.which);
 	if(e.which == 97 || e.which == 65) {
-		$("body").append($(".a-marker").clone().removeClass("a-marker").droppable({
+		$(".append-wrapper").append($(".a-marker").clone().removeClass("a-marker").droppable({
       drop: function( event, ui ) {
         
         if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("texture")) {
-          $( this ).find("div").css("textures",ui.draggable.css("textures"));
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -23,14 +34,19 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 98 || e.which == 66) {
-		$("body").append($(".b-marker").clone().removeClass("b-marker").droppable({
+		$(".append-wrapper").append($(".b-marker").clone().removeClass("b-marker").droppable({
       drop: function( event, ui ) {
 
       	if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -38,14 +54,19 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 99 || e.which == 67) {
-		$("body").append($(".c-marker").clone().removeClass("c-marker").droppable({
+		$(".append-wrapper").append($(".c-marker").clone().removeClass("c-marker").droppable({
       drop: function( event, ui ) {
 
          if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -53,13 +74,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 100 || e.which == 68) {
-		$("body").append($(".d-marker").clone().removeClass("d-marker").droppable({
+		$(".append-wrapper").append($(".d-marker").clone().removeClass("d-marker").droppable({
       drop: function( event, ui ) {
         if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -67,13 +93,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 101 || e.which == 69) {
-		$("body").append($(".e-marker").clone().removeClass("e-marker").droppable({
+		$(".append-wrapper").append($(".e-marker").clone().removeClass("e-marker").droppable({
       drop: function( event, ui ) {
        if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -81,13 +112,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 102 || e.which == 70) {
-		$("body").append($(".f-marker").clone().removeClass("f-marker").droppable({
+		$(".append-wrapper").append($(".f-marker").clone().removeClass("f-marker").droppable({
       drop: function( event, ui ) {
        if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -95,13 +131,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 103 || e.which == 71) {
-		$("body").append($(".g-marker").clone().removeClass("g-marker").droppable({
+		$(".append-wrapper").append($(".g-marker").clone().removeClass("g-marker").droppable({
       drop: function( event, ui ) {
        if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -109,13 +150,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 104 || e.which == 72) {
-		$("body").append($(".h-marker").clone().removeClass("h-marker").droppable({
+		$(".append-wrapper").append($(".h-marker").clone().removeClass("h-marker").droppable({
       drop: function( event, ui ) {
        if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -123,13 +169,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 105 || e.which == 73) {
-		$("body").append($(".i-marker").clone().removeClass("i-marker").droppable({
+		$(".append-wrapper").append($(".i-marker").clone().removeClass("i-marker").droppable({
       drop: function( event, ui ) {
        if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -137,13 +188,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 106 || e.which == 74) {
-		$("body").append($(".j-marker").clone().removeClass("j-marker").droppable({
+		$(".append-wrapper").append($(".j-marker").clone().removeClass("j-marker").droppable({
       drop: function( event, ui ) {
         if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -151,13 +207,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 107 || e.which == 75) {
-		$("body").append($(".k-marker").clone().removeClass("k-marker").droppable({
+		$(".append-wrapper").append($(".k-marker").clone().removeClass("k-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -165,13 +226,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 108 || e.which == 76) {
-		$("body").append($(".l-marker").clone().removeClass("l-marker").droppable({
+		$(".append-wrapper").append($(".l-marker").clone().removeClass("l-marker").droppable({
       drop: function( event, ui ) {
        if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -179,13 +245,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 109 || e.which == 77) {
-		$("body").append($(".m-marker").clone().removeClass("m-marker").droppable({
+		$(".append-wrapper").append($(".m-marker").clone().removeClass("m-marker").droppable({
       drop: function( event, ui ) {
       if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -193,13 +264,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 110 || e.which == 78) {
-		$("body").append($(".n-marker").clone().removeClass("n-marker").droppable({
+		$(".append-wrapper").append($(".n-marker").clone().removeClass("n-marker").droppable({
       drop: function( event, ui ) {
          if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -207,13 +283,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 111 || e.which == 79) {
-		$("body").append($(".o-marker").clone().removeClass("o-marker").droppable({
+		$(".append-wrapper").append($(".o-marker").clone().removeClass("o-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -221,13 +302,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 112 || e.which == 80) {
-		$("body").append($(".p-marker").clone().removeClass("p-marker").droppable({
+		$(".append-wrapper").append($(".p-marker").clone().removeClass("p-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -235,13 +321,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 113 || e.which == 81) {
-		$("body").append($(".q-marker").clone().removeClass("q-marker").droppable({
+		$(".append-wrapper").append($(".q-marker").clone().removeClass("q-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -249,13 +340,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 114 || e.which == 82) {
-		$("body").append($(".r-marker").clone().removeClass("r-marker").droppable({
+		$(".append-wrapper").append($(".r-marker").clone().removeClass("r-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -263,13 +359,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 115 || e.which == 83) {
-		$("body").append($(".s-marker").clone().removeClass("s-marker").droppable({
+		$(".append-wrapper").append($(".s-marker").clone().removeClass("s-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -277,13 +378,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 116 || e.which == 84) {
-		$("body").append($(".t-marker").clone().removeClass("t-marker").droppable({
+		$(".append-wrapper").append($(".t-marker").clone().removeClass("t-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -291,13 +397,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 117 || e.which == 85) {
-		$("body").append($(".u-marker").clone().removeClass("u-marker").droppable({
+		$(".append-wrapper").append($(".u-marker").clone().removeClass("u-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -305,13 +416,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 118 || e.which == 86) {
-		$("body").append($(".v-marker").clone().removeClass("v-marker").droppable({
+		$(".append-wrapper").append($(".v-marker").clone().removeClass("v-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -319,13 +435,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 119 || e.which == 87) {
-		$("body").append($(".w-marker").clone().removeClass("w-marker").droppable({
+		$(".append-wrapper").append($(".w-marker").clone().removeClass("w-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -333,13 +454,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 120 || e.which == 88) {
-		$("body").append($(".x-marker").clone().removeClass("x-marker").droppable({
+		$(".append-wrapper").append($(".x-marker").clone().removeClass("x-marker").droppable({
       drop: function( event, ui ) {
       if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -347,13 +473,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 121 || e.which == 89) {
-		$("body").append($(".y-marker").clone().removeClass("y-marker").droppable({
+		$(".append-wrapper").append($(".y-marker").clone().removeClass("y-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -361,13 +492,18 @@ $(window).keypress(function(e) {
 	}
 
 	if(e.which == 122 || e.which == 90) {
-		$("body").append($(".z-marker").clone().removeClass("z-marker").droppable({
+		$(".append-wrapper").append($(".z-marker").clone().removeClass("z-marker").droppable({
       drop: function( event, ui ) {
      if(ui.draggable.hasClass("color")) {
         	$( this ).css("background-color",ui.draggable.css("background-color"));
         }
         if(ui.draggable.hasClass("fill")) {
+          $( this ).find("div").attr('style', '');
         	$( this ).find("div").css("background-color",ui.draggable.css("background-color"));
+        }
+        if(ui.draggable.hasClass("texture")) {
+          $( this ).find("div").attr('style', '');
+          $( this ).find("div").css("background-image",ui.draggable.css("background-image"));
         }
         console.log(ui.draggable.css("background-color"));
       }
@@ -447,19 +583,19 @@ $(".fill6").click(function() {
 
 $(".texture1").click(function() {
 	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-image","url(assets/img/texture1.JPG)");
-	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","200px 400px");
+	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","100px 200px");
  
 })
 
 $(".texture2").click(function() {
 	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-image","url(assets/img/texture2.jpg)");
-	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","200px 400px");
+	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","200px 200px");
  
 })
 
 $(".texture3").click(function() {
 	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-image","url(assets/img/texture3.jpg)");
-	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","200px 400px");
+	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","150px 200px");
  
 })
 
@@ -471,13 +607,13 @@ $(".texture4").click(function() {
 
 $(".texture5").click(function() {
 	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-image","url(assets/img/texture5.png)");
-	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","200px 300px");
+	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","150px 200px");
  
 })
 
 $(".texture6").click(function() {
 	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-image","url(assets/img/texture6.png)");
-	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","200px 200px");
+	$(".a-horizontal, .a-horizontal-mid, .a-vertical, .a-vertical-right, .b-horizontal-bottom, .c-horizontal, .c-horizontal-bottom, .d-horizontal, .d-vertical-right-top, .d-vertical-right, .c-horizontal, .g-vertical-right, .i-vertical, .j-vertical-left, .k-vertical-right-top, .k-vertical-right-bottom, .m-horizontal, .m-vertical, .m-vertical-mid, .m-vertical-right, .o-vertical, .o-vertical-right, .p-vertical-right, .q-horizontal-bottom, .r-horizontal, .s-vertical, .t-vertical, .v-vertical, .v-vertical-right, .x-vertical-left-top, .x-vertical-left-bottom, .y-horizontal-mid, .y-vertical-left-top, .y-vertical-right-top, .y-vertical, .z-vertical").css("background-size","250px 250px");
  
 })
 
@@ -642,6 +778,7 @@ $('.color1, .color2, .color3, .color4, .color5, .color6, .fill1, .fill2, .fill3,
 	helper: 'clone'
 });
 
+
 $( ".letter" ).droppable({
       drop: function( event, ui ) {
         $( this ).addClass( "ui-state-highlight" );
@@ -663,5 +800,11 @@ $( ".letter" ).droppable({
  function myFunction() {
     location.reload();
 }
+
+
+// $(".color1, .color2, .color3, .color4, .color5, .color6, .fill1, .fill2, .fill3, .fill4, .fill5, .fill6, .texture1, .texture2, .texture3, .texture4, .texture5, .texture6").onmousemove(function() {
+//   $(this).css("cursor","grabbing");
+ 
+// })
 
 

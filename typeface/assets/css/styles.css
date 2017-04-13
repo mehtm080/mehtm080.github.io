@@ -4,6 +4,10 @@ html, body{
 	font-size:0;
 }
 
+.append-wrapper {
+	width: 100%;
+}
+
 #rectangle1{
 	position:relative;
 	width: 100%;
@@ -141,6 +145,12 @@ h1{
     cursor: -webkit-grabbing;
 }
 
+.color1:mousemove { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
 .color2{
 	position:absolute;
 	background-color: #fc4300;
@@ -240,6 +250,12 @@ h1{
 	top: 37%;
 }
 
+.fill1:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
 .fill2{
 	position:absolute;
 	background-color: #ff5d00;
@@ -248,6 +264,12 @@ h1{
 	height: 25px;
 	left: 53%;
 	top: 37%;
+}
+
+.fill2:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 
 .fill3{
@@ -260,6 +282,12 @@ h1{
 	top: 44%;
 }
 
+.fill3:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
 .fill4{
 	position:absolute;
 	background-color: #539601;
@@ -268,6 +296,12 @@ h1{
 	height: 25px;
 	left: 53%;
 	top: 44%;
+}
+
+.fill4:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 
 .fill5{
@@ -280,6 +314,12 @@ h1{
 	top: 51%;
 }
 
+.fill5:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
 .fill6{
 	position:absolute;
 	background-color: #3300ff;
@@ -288,6 +328,12 @@ h1{
 	height: 25px;
 	left: 53%;
 	top: 51%;
+}
+
+.fill6:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 
 .textures{
@@ -329,7 +375,7 @@ h1{
 	top: 66%;
 }
 
-.tecture2:active { 
+.texture2:active { 
     cursor: grabbing;
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
@@ -346,7 +392,7 @@ h1{
 	top: 73%;
 }
 
-.tecture3:active { 
+.texture3:active { 
     cursor: grabbing;
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
@@ -363,7 +409,7 @@ h1{
 	top: 73%;
 }
 
-.tecture4:active { 
+.texture4:active { 
     cursor: grabbing;
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
@@ -380,7 +426,7 @@ h1{
 	top: 80%;
 }
 
-.tecture5:active { 
+.texture5:active { 
     cursor: grabbing;
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
@@ -397,7 +443,7 @@ h1{
 	top: 80%;
 }
 
-.tecture6:active { 
+.texture6:active { 
     cursor: grabbing;
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
@@ -506,9 +552,22 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 
+
 .all-letters {
 	display: none;
 }
+
+.letterspace{
+	display: inline-block;
+	margin: 0 15px 60px 15px;
+	overflow:hidden;
+	width:80px;
+	height:200px;
+	position:relative;
+	display:inline-block;
+}
+
+
 /*A*/
 .lettera{
 	display: inline-block;

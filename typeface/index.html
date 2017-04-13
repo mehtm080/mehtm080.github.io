@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Redesign</title>
+    <title>DESIGN YOUR THOUGHTS</title>
     <link href="assets/css/styles.css" media="all" rel="stylesheet" />
-    <link rel="shortcut icon" href="" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href=""/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="Scripts/html2canvas.js" type="text/javascript"></script>
+
+  <link rel="icon" 
+      type="image/jpg" 
+      href="assets/img/favicon.jpg" />
 
   </head>
 
@@ -36,8 +41,10 @@
     <div class="texture texture4"></div>
     <div class="texture texture5"></div>
     <div class="texture texture6"></div>
+    
     <div onclick="myFunction()">
-<div><img src="assets/img/reload.png" class="reload"></div></div>
+    <div><img src="assets/img/reload.png" class="reload"></div></div>
+
   </div>
 
 
@@ -57,19 +64,21 @@
 -->100%<--
 
 <div class="all-letters">
+ <div class= "letter letterspace space-marker"></div> 
+
     <div class= "letter lettera a-marker editing">
       <div class="a-horizontal"></div>
       <div class="a-horizontal-mid"></div>
-      <div class="a-vertical"></div>
       <div class="a-vertical-right"></div>
+      <div class="a-vertical"></div>
     </div>  
 
     <div class= "letter letterb b-marker">
       <div class="a-horizontal"></div>
       <div class="a-horizontal-mid"></div>
+      <div class="b-horizontal-bottom"></div>
       <div class="a-vertical"></div>
       <div class="a-vertical-right"></div>
-      <div class="b-horizontal-bottom"></div>
     </div> 
 
     <div class= "letter letterc c-marker">
@@ -1835,6 +1844,11 @@
     </div> 
 </div>
 
+
+
+<div class="append-wrapper">
+
+</div>
 
   <script src="assets/js/app.js"></script>
 
