@@ -349,14 +349,14 @@ h1{
 
 .texture1{
 	position:absolute;
-	background-color: #50513d;
-	background-image: url(../img/texture1.jpg);
 	background-size: 25px 25px;
 	cursor:pointer;
 	width: 25px;
 	height: 25px;
 	left: 7%;
 	top: 66%;
+	background: -webkit-linear-gradient(#272828, #56534c, #665f50, #8c8a88, #ccc9c7);
+
 }
 
 .texture1:active { 
