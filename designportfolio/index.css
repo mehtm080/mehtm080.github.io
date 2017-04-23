@@ -3,7 +3,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: white;
+	background-color: #fff;
 }
 
 #loader{
@@ -128,9 +128,9 @@ a{
 	position:absolute;
 	width:70%;
 	height: 150%;
-	background-color:white;
+	background-color:#fff;
 	top: 10%;
-	left:15%;
+	left:18%;
 	overflow: hidden;
 }
 
@@ -806,6 +806,7 @@ a{
 	animation: internship 2s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 5px;
 }
 
 .t4{
@@ -817,6 +818,8 @@ a{
 	animation: internship 3s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 3px;
+
 }
 
 .e2{
@@ -829,6 +832,7 @@ a{
 	animation: internship 4s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+left: 2px;
 }
 
 .r4{
@@ -840,6 +844,7 @@ a{
 	animation: internship 5s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
 }
 
 .n4{
@@ -851,6 +856,7 @@ a{
 	animation: internship 6s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
 }
 
 .s2{
@@ -862,6 +868,7 @@ a{
 	animation: internship 7s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
 }
 
 .h3{
@@ -873,6 +880,7 @@ a{
 	animation: internship 8s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
 }
 
 .i4{
@@ -884,9 +892,10 @@ a{
 	animation: internship 9s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
 }
 
-.p3{
+.i7{
 	font-size: 30px;
 	color: #2d2d2d;
 	font-family: "Oswald",helvetica;
@@ -895,6 +904,55 @@ a{
 	animation: internship 10s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
+}
+
+.e3{
+	font-size: 30px;
+	color: #2d2d2d;
+	font-family: "Oswald",helvetica;
+	text-align: center;
+	position:relative;
+	animation: internship 10s
+  infinite ease-in alternate;
+  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
+}
+
+.n5{
+	font-size: 30px;
+	color: #2d2d2d;
+	font-family: "Oswald",helvetica;
+	text-align: center;
+	position:relative;
+	animation: internship 10s
+  infinite ease-in alternate;
+  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
+}
+
+.c2{
+	font-size: 30px;
+	color: #2d2d2d;
+	font-family: "Oswald",helvetica;
+	text-align: center;
+	position:relative;
+	animation: internship 10s
+  infinite ease-in alternate;
+  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
+}
+
+.e4{
+	font-size: 30px;
+	color: #2d2d2d;
+	font-family: "Oswald",helvetica;
+	text-align: center;
+	position:relative;
+	animation: internship 10s
+  infinite ease-in alternate;
+  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: 8px;
 }
 
 .box8{
@@ -936,6 +994,7 @@ a{
 	animation: godiva 1s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+
 }
 
 .o5{
@@ -947,6 +1006,7 @@ a{
 	animation: godiva 2s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: -3px;
 }
 
 .d4{
@@ -958,6 +1018,7 @@ a{
 	animation: godiva 3s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: -6px;
 }
 
 .i6{
@@ -969,6 +1030,7 @@ a{
 	animation: godiva 1s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: -10px;
 }
 
 .v1{
@@ -980,6 +1042,7 @@ a{
 	animation: godiva 2s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: -14px;
 }
 
 .a4{
@@ -991,6 +1054,7 @@ a{
 	animation: godiva 3s
   infinite ease-in alternate;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  left: -18px;
 }
 
 

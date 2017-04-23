@@ -1,0 +1,178 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+.header{
+	position:relative;
+	width:100%;
+	height:150px;
+	background-color: #232323;
+	font-family: "wire one";
+	top:0;
+}
+
+.name{
+	position:absolute;
+	top:50%;
+	left:5%;
+	font-size: 50px;
+	color:white;
+}
+
+.about{
+	position:absolute;
+	top:30%;
+	right:5%;
+	font-size: 22px;
+	color:white;
+}
+
+.art{
+	position:absolute;
+	top:50%;
+	right:5%;
+	font-size: 22px;
+	color:white;
+}
+
+.contact{
+	position:absolute;
+	top:70%;
+	right:5%;
+	font-size: 22px;
+	color:white;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.description{
+	position: relative;
+	top: 10%;
+	left:25%;
+	width:50%;
+	height:auto;
+	color:black;
+	font-size:15px;
+	font-family: "Oswald";
+}
+
+.web{
+	position:relative;
+	font-size:15px;
+	font-family: "Oswald";
+	text-align:center;
+	color:black;
+}
+
+a.web { 
+	position:relative;
+	font-size:15px;
+	font-family: "Oswald";
+	text-align:center;
+	color:black;
+	text-decoration: underline;
+}
+
+.wrapper{
+	position:relative;
+	top: 20%;
+	left: 15%;
+	width: 70%;
+	height:220%;
+	background-color: #fff;
+}
+
+.img1{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 350px;
+	height:1139px;
+	background-image:url(img1.jpg);
+	background-size: 350px 1139px;
+	background-repeat: no-repeat;
+}
+
+.img2{
+	position: absolute;
+	top:0;
+	right:0;
+	width: 512px;
+	height:290px;
+	background-image:url(img2.jpg);
+	background-size: 512px 290px;
+	background-repeat: no-repeat;
+}
+
+.img3{
+	position: absolute;
+	top:300px;
+	right:0;
+	width: 511px;
+	height:290px;
+	background-image:url(img3.png);
+	background-size: 511px 290px;
+	background-repeat: no-repeat;
+}
+
+.img4{
+	position: absolute;
+	top:600px;
+	right:0;
+	width: 511px;
+	height:290px;
+	background-image:url(img4.png);
+	background-size: 511px 290px;
+	background-repeat: no-repeat;
+}
+
+.img5{
+	position: absolute;
+	top:900px;
+	right:0;
+	width: 511px;
+	height:290px;
+	background-image:url(img5.png);
+	background-size: 511px 290px;
+	background-repeat: no-repeat;
+}
+
+.img6{
+	position: absolute;
+	top:1200px;
+	right:0;
+	width: 511px;
+	height:290px;
+	background-image:url(img6.png);
+	background-size: 511px 290px;
+	background-repeat: no-repeat;
+}
+
+.img7{
+	position: absolute;
+	top:1185px;
+	left:0;
+	width: 350px;
+	height:41px;
+	background-image:url(img7.png);
+	background-size: 350px 41px;
+	background-repeat: no-repeat;
+}
+
+.img8{
+	position: absolute;
+	top:1255px;
+	left:0;
+	width: 140px;
+	height:420px;
+	background-image:url(img3.jpg);
+	background-size: 140px 420px;
+	background-repeat: no-repeat;
+}
