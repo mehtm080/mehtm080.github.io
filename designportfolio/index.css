@@ -1350,3 +1350,75 @@ left: 2px;
 	background-image: url(img/img18.jpg);
 	background-size: 400px 280px;
 }
+
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+
+.body {
+	width: 90%;
+}
+
+#loader{
+	margin-top:100%;
+}
+
+#slideshow{
+	margin-top: 100%; 
+}
+
+.header{
+	position:absolute;
+	width:100%;
+	height:150px;
+	background-color: #232323;
+	font-family: "wire one";
+	font-style: bold;
+	left:0;
+}
+
+.name{
+	position:absolute;
+	top:30%;
+	left:35%;
+	font-size: 50px;
+	color:white;
+}
+
+.about{
+	top:70%;
+	left:20%;
+	display:inline-block;
+	font-size: 38px;
+}
+
+.art{
+	top:70%;
+	left:45%;
+	display:inline-block;
+	font-size: 38px;
+}
+
+.contact{
+	top:70%;
+	left:70%;
+	display:inline-block;
+	font-size: 38px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.wrapper{
+	position:absolute;
+	width:70%;
+	height: 150%;
+	background-color:#fff;
+	top: 10%;
+	left:18%;
+	overflow: hidden;
+}
+
+
+}
