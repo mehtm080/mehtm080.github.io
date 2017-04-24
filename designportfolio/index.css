@@ -1062,49 +1062,49 @@ left: 2px;
 .img1{
 	position:absolute;
 	width: 500px;
-	height: 300px;
+	height: 259.2px;
 	background-color:black;
 	margin-left: 10px;
 	margin-top: 80px;
 	background-image: url(img/img1-1.png);
-	background-size: 500px 300px;
+	background-size: 512px 259.2px;
 }
 
 .img1:hover {
 	background-image: url(img/img1.png);
-	background-size: 500px 300px;
+	background-size: 512px 259.2px;
 }
 
 .img2{
 	position:absolute;
 	width: 500px;
-	height: 300px;
+	height: 259.2px;
 	background-color:black;
 	margin-left: 10px;
-	margin-top: 390px;
+	margin-top: 350px;
 	background-image: url(img/img2-1.png);
-	background-size: 500px 300px;
+	background-size: 500px 259.2px;
 }
 
 .img2:hover {
 	background-image: url(img/img2.png);
-	background-size: 500px 300px;
+	background-size: 500px 259.2px;
 }
 
 .img3{
 	position:absolute;
 	width: 500px;
-	height: 290px;
+	height: 259.2px;
 	background-color:black;
 	margin-left: 10px;
-	margin-top: 700px;
+	margin-top: 622px;
 	background-image: url(img/img3-1.png);
-	background-size: 500px 290px;
+	background-size: 500px 259.2px;
 }
 
 .img3:hover {
 	background-image: url(img/img3.png);
-	background-size: 500px 290px;
+	background-size: 500px 259.2px;
 }
 
 .img4{
