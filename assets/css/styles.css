@@ -14,9 +14,10 @@ html, body {
 
 .rectangle2{
 	width: 100%;
-	height: 100%;
-	background: #b7c4cc;
+	height: 200%;
+	background: #eaedf2;
 }
+
 
 #logo{
 	position: relative;
@@ -42,7 +43,7 @@ html, body {
 }
 
 .flexgrid{
-	margin-top: 10px;
+	margin-top: 5px;
 	font-size: 30px;
 	color: #70a6ff;
 	font-family: futura;
@@ -58,7 +59,7 @@ html, body {
 }
 
 .quiz2{
-	margin-top: 10px;
+	margin-top: 5px;
 	font-size: 30px;
 	color: #70a6ff;
 	font-family: futura;
@@ -74,7 +75,7 @@ html, body {
 }
 
 .js2{
-	margin-top: 10px;
+	margin-top: 5px;
 	font-size: 30px;
 	color: #70a6ff;
 	font-family: futura;
@@ -82,7 +83,15 @@ html, body {
 }
 
 .js3{
-	margin-top: 10px;
+	margin-top: 5px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
+.js4{
+	margin-top: 5px;
 	font-size: 30px;
 	color: #70a6ff;
 	font-family: futura;
@@ -92,6 +101,13 @@ html, body {
 a{
 	text-decoration: none;
 	color:#586268;
+}
+
+.rectangle3{
+	width: 100%;
+	height: 300%;
+	background: #eff5ff;
+	top:0;
 }
 
 .space{
@@ -202,7 +218,7 @@ a{
 
 .typeface{
 	position: relative;
-	margin-top:300px;
+	margin-top:50px;
 }
 
 .t{

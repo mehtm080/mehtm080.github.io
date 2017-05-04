@@ -560,8 +560,11 @@ $(".arrow").click(function() {
 		translation = translation + " " + $(this).data("engword");
 	});
 
+	$('.translation').html(translation);
+
 	console.log(translation);
 
 });
+
 
 
