@@ -1351,6 +1351,17 @@ left: 2px;
 	background-size: 400px 280px;
 }
 
+.copyrights{
+	position: relative;
+	top:150%;
+	left:40%;
+	font-family:"oswald";
+	font-size:15px;
+	color:grey;
+	width:20%;
+	text-align:center;
+}
+
 @media only screen and (min-width: 150px) and (max-width: 600px)
 {
 

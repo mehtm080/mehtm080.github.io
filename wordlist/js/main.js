@@ -1,8 +1,567 @@
-var words = new Array("the", "of", "and", "a", "to", "in", "is", "you", "that", "it", "he", "was", "for", "on", "are", "as", "with", "his", "they", "I", "at", "be", "this", "have", "from", "or", "one", "had", "by", "words", "but", "not", "what", "all", "were", "we", "when", "your", "can", "said", "there", "use", "an", "each", "which", "she", "do", "how", "their", "if", "will", "up", "other", "about", "out", "many", "then", "them", "these", "so", "some", "her", "would", "make", "like", "him", "into", "time", "has", "look", "two", "more", "write", "go", "see", "number", "no", "way", "could", "people", "my", "than", "first", "water", "been", "called", "who", "oil", "sit", "now", "find", "long", "down", "day", "did", "get", "come", "made", "may", "part", "over", "new", "sound", "take", "only", "little", "work", "know", "place", "years", "live", "me", "back", "give", "most", "very", "after", "things", "our", "just", "name", "good", "sentence", "man", "think", "say", "great", "where", "help", "through", "much", "before", "line", "right", "too", "means", "old", "any", "same", "tell", "boy", "follow", "came", "want", "show", "also", "around", "form", "three", "small", "set", "put", "end", "does", "another", "well", "large", "must", "big", "even", "such", "because", "turn", "here", "why", "ask", "went", "men", "read", "need", "land", "different", "home", "us", "move", "try", "kind", "hand", "picture", "again", "change", "off", "play", "spell", "air", "away", "animal", "house", "point", "page", "letter", "mother", "answer", "found", "study", "still", "learn", "should", "America", "world", "high", "every", "near", "add", "food", "between", "own", "below", "country", "plant", "last", "school", "father", "keep", "tree", "never", "start", "city", "earth", "eyes", "light", "thought", "head", "under", "story", "saw", "left", "don’t", "few", "while", "along", "might", "close", "something", "seem", "next", "hard", "open", "example", "begin", "life", "always", "those", "both", "paper", "together", "got", "group", "often", "run", "important", "until", "children", "side", "feet", "car", "mile", "night", "walk", "white", "sea", "began", "grow", "took", "river", "four", "carry", "state", "once", "book", "hear", "stop", "without", "second", "late", "miss", "idea", "enough", "eat", "face", "watch", "far", "Indian", "real", "almost", "let", "above", "girl", "sometimes", "mountains", "cut", "young", "talk", "soon", "list", "song", "being", "leave", "family", "it’s", "body", "music", "color", "stand", "sun", "questions", "fish", "area", "mark", "dog", "horse", "birds", "problem", "complete", "room", "knew", "since", "ever", "piece", "told", "usually", "didn’t", "friends", "easy", "heard", "order", "red", "door", "sure", "become", "top", "ship", "across", "today", "during", "short", "better", "best", "however", "low", "hours", "black", "products", "happened", "whole", "measure", "remember", "early", "waves", "reached", "listen", "wind", "rock", "space", "covered", "fast", "several", "hold", "himself", "toward", "five", "step", "morning", "passed", "vowel", "true", "hundred", "against", "pattern", "numeral", "table", "north", "slowly", "money", "map", "farm", "pulled", "draw", "voice", "seen", "cold", "cried", "plan", "notice", "south", "sing", "war", "ground", "fall", "king", "town", "I’ll", "unit", "figure", "certain", "field", "travel", "wood", "fire", "upon", "done", "English", "road", "half", "ten", "fly", "gave", "box", "finally", "wait", "correct", "oh", "quickly", "person", "became", "shown", "minutes", "strong", "verb", "stars", "front", "feel", "fact", "inches", "street", "decided", "contain", "course", "surface", "produce", "building", "ocean", "class", "note", "nothing", "rest", "carefully", "scientists", "inside", "wheels", "stay", "green", "known", "island", "week", "less", "machine", "base", "ago", "stood", "plane", "system", "behind", "ran", "round", "boat", "game", "force", "brought", "understand", "warm", "common", "bring", "explain", "dry", "though", "language", "shape", "deep", "thousands", "yes", "clear", "equation", "yet", "government", "filled", "heat", "full", "hot", "check", "object", "am", "rule", "among", "noun", "power", "cannot", "able", "six", "size", "dark", "ball", "material", "special", "heavy", "fine", "pair", "circle", "include", "built", "can’t", "matter", "square", "syllables", "perhaps", "bill", "felt", "suddenly", "test", "direction", "center", "farmers", "ready", "anything", "divided", "general", "energy", "subject", "Europe", "moon", "region", "return", "believe", "dance", "members", "picked", "simple", "cells", "paint", "mind", "love", "cause", "rain", "exercise", "eggs", "train", "blue", "wish", "drop", "developed", "window", "difference", "distance", "heart", "site", "sum", "summer", "wall", "forest", "probably", "legs", "sat", "main", "winter", "wide", "written", "length", "reason", "kept", "interest", "arms", "brother", "race", "present", "beautiful", "store", "job", "edge", "past", "sign", "record", "finished", "discovered", "wild", "happy", "beside", "gone", "sky", "grass", "million", "west", "lay", "weather", "root", "instruments", "meet", "third", "months", "paragraph", "raised", "represent", "soft", "whether", "clothes", "flowers", "shall", "teacher", "held", "describe", "drive", "cross", "speak", "solve", "appear", "metal", "son", "either", "ice", "sleep", "village", "factors", "result", "jumped", "snow", "ride", "care", "floor", "hill", "pushed", "baby", "buy", "century", "outside", "everything", "tall", "already", "instead", "phrase", "soil", "bed", "copy", "free", "hope", "spring", "case", "laughed", "nation", "quite", "type", "themselves", "temperature", "bright", "lead", "everyone", "method", "section", "lake", "iron", "within", "dictionary", "hair", "age", "amount", "scale", "pounds", "although", "per", "broken", "moment", "tiny", "possible", "gold", "milk", "quiet", "natural", "lot", "stone", "act", "build", "middle", "speed", "count", "consonant", "someone", "sail", "rolled", "bear", "wonder", "smiled", "angle", "fraction", "Africa", "killed", "melody", "bottom", "trip", "hole", "poor", "let’s", "fight", "surprise", "French", "died", "beat", "exactly", "remain", "dress", "cat", "couldn’t", "fingers", "row", "least", "catch", "climbed", "wrote", "shouted", "continued", "itself", "else", "plains", "gas", "England", "burning", "design", "joined", "foot", "law", "ears", "glass", "you’re", "grew", "skin", "valley", "cents", "key", "president", "brown", "trouble", "cool", "cloud", "lost", "sent", "symbols", "wear", "bad", "save", "experiment", "engine", "alone", "drawing", "east", "choose", "single", "touch", "information", "express", "mouth", "yard", "equal", "decimal", "yourself", "control", "practice", "report", "straight", "rise", "statement", "stick", "party", "seeds", "suppose", "woman", "coast", "bank", "period", "wire", "pay", "clean", "visit", "bit", "whose", "received", "garden", "please", "strange", "caught", "fell", "team", "God", "captain", "direct", "ring", "serve", "child", "desert", "increase", "history", "cost", "maybe", "business", "separate", "break", "uncle", "hunting", "flow", "lady", "students", "human", "art", "feeling", "supply", "corner", "electric", "insects", "crops", "tone", "hit", "sand", "doctor", "provide", "thus", "won’t", "cook", "bones", "mall", "board", "modern", "compound", "mine", "wasn’t", "fit", "addition", "belong", "safe", "soldiers", "guess", "silent", "trade", "rather", "compare", "crowd", "poem", "enjoy", "elements", "indicate", "except", "expect", "flat", "seven", "interesting", "sense", "string", "blow", "famous", "value", "wings", "movement", "pole", "exciting", "branches", "thick", "blood", "lie", "spot", "bell", "fun", "loud", "consider", "suggested", "thin", "position", "entered", "fruit", "tied", "rich", "dollars", "send", "sight", "chief", "Japanese", "stream", "planets", "rhythm", "eight", "science", "major", "observe", "tube", "necessary", "weight", "meat", "lifted", "process", "army", "hat", "property", "particular", "swim", "terms", "current", "park", "sell", "shoulder", "industry", "wash", "block", "spread", "cattle", "wife", "sharp", "company", "radio", "we’ll", "action", "capital", "factories", "settled", "yellow", "isn’t", "southern", "truck", "fair", "printed", "wouldn’t", "ahead", "chance", "born", "level", "triangle", "molecules", "France", "repeated", "column", "western", "church", "sister", "oxygen", "plural", "various", "agreed", "opposite", "wrong", "chart", "prepared", "pretty", "solution", "fresh", "shop", "suffix", "especially", "shoes", "actually", "nose", "afraid", "dead", "sugar", "adjective", "fig", "office", "huge", "gun", "similar", "death", "score", "forward", "stretched", "experience", "rose", "allow", "fear", "workers", "Washington", "Greek", "women", "bought", "led", "march", "northern", "create", "British", "difficult", "match", "win", "doesn’t", "steel", "total", "deal", "determine", "evening", "hoe", "rope", "cotton", "apple", "details", "entire", "corn", "substances", "smell", "tools", "conditions", "cows", "track", "arrived", "located", "sir", "seat", "division", "effect", "underline", "view");
+$(".scroll-bar-1").on("input change", function() { 
+	console.log($(this).val());
 
-$("p").html(words[Math.floor(Math.random()*words.length)]);
-$("p").append(" ");
-$("p").append(words[Math.floor(Math.random()*words.length)]);
-$("p").append(" ");
-$("p").append(words[Math.floor(Math.random()*words.length)]);
+	if (($(this).val() <= 5.88) &&  ($(this).val() > 0)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".you").css("background-color","#5998ff").addClass("selected");
+
+	}
+	
+	if (($(this).val() <= 11.76) &&  ($(this).val() > 5.88)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".it").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 17.64) &&  ($(this).val() > 11.76)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".he").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 23.52) &&  ($(this).val() > 17.64)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".they").css("background-color","#5998ff").addClass("selected");
+	}
+
+	if (($(this).val() <= 29.4) &&  ($(this).val() > 23.52)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".this").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 35.28) &&  ($(this).val() > 29.4)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".what").css("background-color","#5998ff").addClass("selected");
+	}
+
+	if (($(this).val() <= 41.16) &&  ($(this).val() > 35.28)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".we").css("background-color","#5998ff").addClass("selected");
+	}
+
+	if (($(this).val() <= 47.04) &&  ($(this).val() > 41.16)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".my").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 52.92) &&  ($(this).val() > 47.04)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".his").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 58.8) &&  ($(this).val() > 52.92)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".her").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 64.68) &&  ($(this).val() > 58.8)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".our").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 70.56) &&  ($(this).val() > 64.68)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".your").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 76.44) &&  ($(this).val() > 70.56)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".their").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 82.32) &&  ($(this).val() > 76.44)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".me").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 88.2) &&  ($(this).val() > 82.32)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".yourself").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 94.08) &&  ($(this).val() > 88.2)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".itself").css("background-color","#5998ff").addClass("selected");
+
+	}
+
+	if (($(this).val() <= 99.96) &&  ($(this).val() > 94.08)) {
+		$(".word-marker1").css("background-color","transparent");
+		$(".word-marker1").removeClass("selected");
+		$(".she").css("background-color","#5998ff").addClass("selected");
+
+	}
+	
+});
+
+
+
+$(".scroll-bar-2").on("input change", function() { 
+	console.log($(this).val());
+
+	if (($(this).val() <= 5.88) &&  ($(this).val() > 0)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".words").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-words").show();
+	}
+	
+	if (($(this).val() <= 11.76) &&  ($(this).val() > 5.88)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".boy").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-boy").show();
+	}
+	
+
+	if (($(this).val() <= 17.64) &&  ($(this).val() > 11.76)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".girl").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-girl").show();
+	}
+
+	if (($(this).val() <= 23.52) &&  ($(this).val() > 17.64)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".mother").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-mother").show();
+
+	}
+
+	if (($(this).val() <= 29.4) &&  ($(this).val() > 23.52)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".america").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-america").show();
+	}
+
+	if (($(this).val() <= 35.28) &&  ($(this).val() > 29.4)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".mountains").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-mountains").show();
+	}
+
+	if (($(this).val() <= 41.16) &&  ($(this).val() > 35.28)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".family").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-family").show();
+	}
+
+	if (($(this).val() <= 47.04) &&  ($(this).val() > 41.16)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".fish").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-fish").show();
+	}
+
+	if (($(this).val() <= 52.92) &&  ($(this).val() > 47.04)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".birds").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-birds").show();
+	}
+
+	if (($(this).val() <= 58.8) &&  ($(this).val() > 52.92)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".dog").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-dog").show();
+	}
+
+	if (($(this).val() <= 64.68) &&  ($(this).val() > 58.8)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".money").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-money").show();
+	}
+
+	if (($(this).val() <= 70.56) &&  ($(this).val() > 64.68)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".map").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-map").show();
+	}
+
+	if (($(this).val() <= 76.44) &&  ($(this).val() > 70.56)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".india").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-india").show();
+	}
+
+	if (($(this).val() <= 82.32) &&  ($(this).val() > 76.44)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".fruit").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-fruit").show();
+	}
+
+	if (($(this).val() <= 88.2) &&  ($(this).val() > 82.32)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".telephone").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-telephone").show();
+	}
+
+	if (($(this).val() <= 94.08) &&  ($(this).val() > 88.2)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".gun").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-gun").show();
+	}
+
+	if (($(this).val() <= 99.96) &&  ($(this).val() > 94.08)) {
+		$(".word-marker2").css("background-color","transparent");
+		$(".word-marker2").removeClass("selected");
+		$(".coffee").css("background-color","#5998ff").addClass("selected");
+		$(".icon-1 img").hide();
+		$(".img-coffee").show();
+	}
+});
+
+
+
+
+
+$(".scroll-bar-3").on("input change", function() { 
+	console.log($(this).val());
+
+	if (($(this).val() <= 5.88) &&  ($(this).val() > 0)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".admire").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-admire").show();
+	}
+	
+	if (($(this).val() <= 11.76) &&  ($(this).val() > 5.88)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".jump").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-jump").show();
+	}
+	
+
+	if (($(this).val() <= 17.64) &&  ($(this).val() > 11.76)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".slap").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-slap").show();
+	}
+
+	if (($(this).val() <= 23.52) &&  ($(this).val() > 17.64)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".kiss").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-kiss").show();
+
+	}
+
+	if (($(this).val() <= 29.4) &&  ($(this).val() > 23.52)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".arrest").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-arrest").show();
+	}
+
+	if (($(this).val() <= 35.28) &&  ($(this).val() > 29.4)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".pray").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-pray").show();
+	}
+
+	if (($(this).val() <= 41.16) &&  ($(this).val() > 35.28)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".kill").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-kill").show();
+	}
+
+	if (($(this).val() <= 47.04) &&  ($(this).val() > 41.16)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".cook").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-cook").show();
+	}
+
+	if (($(this).val() <= 52.92) &&  ($(this).val() > 47.04)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".teach").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-teach").show();
+	}
+
+	if (($(this).val() <= 58.8) &&  ($(this).val() > 52.92)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".blow").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-blow").show();
+	}
+
+	if (($(this).val() <= 64.68) &&  ($(this).val() > 58.8)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".lick").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-lick").show();
+	}
+
+	if (($(this).val() <= 70.56) &&  ($(this).val() > 64.68)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".miss").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-miss").show();
+	}
+
+	if (($(this).val() <= 76.44) &&  ($(this).val() > 70.56)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".watch").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-watch").show();
+	}
+
+	if (($(this).val() <= 82.32) &&  ($(this).val() > 76.44)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".whine").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-whine").show();
+	}
+
+	if (($(this).val() <= 88.2) &&  ($(this).val() > 82.32)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".work").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-work").show();
+	}
+
+	if (($(this).val() <= 94.08) &&  ($(this).val() > 88.2)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".love").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-love").show();
+	}
+
+	if (($(this).val() <= 99.96) &&  ($(this).val() > 94.08)) {
+		$(".word-marker3").css("background-color","transparent");
+		$(".word-marker3").removeClass("selected");
+		$(".advise").css("background-color","#5998ff").addClass("selected");
+		$(".icon-2 img").hide();
+		$(".img-advise").show();
+	}
+});
+
+$(".scroll-bar-4").on("input change", function() { 
+	console.log($(this).val());
+
+	if (($(this).val() <= 5.88) &&  ($(this).val() > 0)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".happy").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-happy").show();
+	}
+	
+	if (($(this).val() <= 11.76) &&  ($(this).val() > 5.88)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".gentle").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-gentle").show();
+	}
+	
+
+	if (($(this).val() <= 17.64) &&  ($(this).val() > 11.76)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".brave").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-brave").show();
+	}
+
+	if (($(this).val() <= 23.52) &&  ($(this).val() > 17.64)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".calm").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-calm").show();
+
+	}
+
+	if (($(this).val() <= 29.4) &&  ($(this).val() > 23.52)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".delightful").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-delightful").show();
+	}
+
+	if (($(this).val() <= 35.28) &&  ($(this).val() > 29.4)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".eager").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-eager").show();	
+	}
+
+	if (($(this).val() <= 41.16) &&  ($(this).val() > 35.28)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".arrogant").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-arrogant").show();
+	}
+
+	if (($(this).val() <= 47.04) &&  ($(this).val() > 41.16)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".awful").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-awful").show();
+	}
+
+	if (($(this).val() <= 52.92) &&  ($(this).val() > 47.04)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".bitter").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-bitter").show();
+	}
+
+	if (($(this).val() <= 58.8) &&  ($(this).val() > 52.92)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".white").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-white").show();
+	}
+
+	if (($(this).val() <= 64.68) &&  ($(this).val() > 58.8)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".blue").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-blue").show();
+	}
+
+	if (($(this).val() <= 70.56) &&  ($(this).val() > 64.68)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".beautiful").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-beautiful").show();
+	}
+
+	if (($(this).val() <= 76.44) &&  ($(this).val() > 70.56)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".nosy").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-nosy").show();
+	}
+
+	if (($(this).val() <= 82.32) &&  ($(this).val() > 76.44)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".repulsive").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-repulsive").show();
+	}
+
+	if (($(this).val() <= 88.2) &&  ($(this).val() > 82.32)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".tense").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-tense").show();
+	}
+
+	if (($(this).val() <= 94.08) &&  ($(this).val() > 88.2)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".warm").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-warm").show();
+	}
+
+	if (($(this).val() <= 99.96) &&  ($(this).val() > 94.08)) {
+		$(".word-marker4").css("background-color","transparent");
+		$(".word-marker4").removeClass("selected");
+		$(".trouble").css("background-color","#5998ff").addClass("selected");
+		$(".icon-3 img").hide();
+		$(".img-trouble").show();
+	}
+});
+
+
+
+$(".arrow").click(function() {
+	var translation = "";
+	$(".selected").each(function() {
+		console.log($(this).data("engword"));
+		translation = translation + " " + $(this).data("engword");
+	});
+
+	console.log(translation);
+
+});
+
 

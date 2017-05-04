@@ -1,195 +1,317 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+html, body{
+  width: 100%;
+  height: 100%;
+  padding:0;
+  font-size:0;
+  font-size: 0px;
+  font-family: 'Teko', sans-serif;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.words-box{
+  position:relative;
+  width:100%;
+  height:100%;
+  left:0;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.sentence{
+  position:relative;
+  width:100%;
+  height:100%;
+  left:0;
+  background-color:black;
+  
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+.row-1{
+    position:absolute;
+    width:10%;
+    height:98%;
+    margin-left:10%;
+    top:2%;
+    line-height:35px;
+    background-color:#fcfaed;
+    padding:5px;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+.row-2{
+    position:absolute;
+    width:10%;
+    height:98%;
+    margin-left:25%;
+    margin-top: 1%;
+    line-height:35px;
+    background-color:#fcfaed;
+    padding:2px;
 }
 
-/*
- * Remove default fieldset styles.
- */
+.row-3{
+    position:absolute;
+    width:10%;
+    height:98%;
+    margin-left:40%;
+    margin-top: 1%;
+    line-height:35px;
+    background-color:#fcfaed;
+    padding:5px;
+}
 
-fieldset {
-    border: 0;
+.row-4{
+    position:absolute;
+    width:10%;
+    height:98%;
+    margin-left:55%;
+    margin-top: 1%;
+    line-height:35px;
+    background-color:#fcfaed;
+    padding:5px;
+}
+
+
+
+.noun{
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    vertical-align: top;
+    padding:5px;
+}
+
+.pronoun{
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    vertical-align: top;
+}
+
+.verb{
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+}
+
+
+.adjective{
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+}
+
+ul{
     margin: 0;
-    padding: 0;
+    padding:0;
+    list-style:none;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-body {
-font-size: 48px;
+li{
+ list-style:none;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
+.scroll-bar-1{
+    position:absolute;
+    left:-12%;
+    top:50%;
+    height:5px;
+    width: 280px;
+    background-color: black;
+    transform:rotate(90deg);
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+.scroll-bar-2{
+    position:absolute;
+    left:3%;
+    top:50%;
+    height:5px;
+    width: 280px;
+    background-color: black;
+    transform:rotate(90deg);
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+.scroll-bar-3{
+    position:absolute;
+    left:18%;
+    top:50%;
+    height:5px;
+    width: 280px;
+    background-color: black;
+    transform:rotate(90deg);
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
+.scroll-bar-4{
+    position:absolute;
+    left:33%;
+    top:50%;
+    height:5px;
+    width: 280px;
+    background-color: black;
+    transform:rotate(90deg);
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.icon-1 img {
+  position:absolute;
+  display: none;
+  width:50%;
+  height:auto;
+  left:25%;
+  top:15%;
+
 }
 
-.clearfix:after {
-    clear: both;
+.icon-2 img {
+  position:absolute;
+  display: none;
+  width:50%;
+  height:auto;
+  left:25%;
+  top:15%;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+.icon-3 img {
+  position:absolute;
+  display: none;
+  width:50%;
+  height:auto;
+  left:25%;
+  top:15%;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 40%;
+  margin: 9.3px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #000000;
+  border-radius: 0px;
+  border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 22px;
+  width: 22px;
+  border-radius: 0px;
+  background: #000000;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9.3px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #000000;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #000000;
+  border-radius: 0px;
+  border: 0px solid #000101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 22px;
+  width: 22px;
+  border-radius: 0px;
+  background: #000000;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #000000;
+  border: 0px solid #000101;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #000000;
+  border: 0px solid #000101;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 22px;
+  width: 22px;
+  border-radius: 0px;
+  background: #000000;
+  cursor: pointer;
+  height: 3.4px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #000000;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #000000;
+}
+
+.icon-1{
+  position:absolute;
+  width:20%;
+  height:30%;
+  background-color:#fcfaed;
+  left:75%;
+  top:3%;
+  overflow:hidden;
+}
+
+.icon-2{
+  position:absolute;
+  width:20%;
+  height:30%;
+  background-color:#fcfaed;
+  left:75%;
+  top:35%;
+  overflow:hidden;
+}
+
+.icon-3{
+  position:absolute;
+  width:20%;
+  height:30%;
+  background-color:#fcfaed;
+  left:75%;
+  top:67%;
+  overflow:hidden;
+}
+
+.arrow{
+  position:absolute;
+  top:89%;
+  left:95%;
+  height:60px;
+  width:auto;
+}
+
+.translation{
+  position:absolute;
+  top:40%;
+  left:25%;
+  width:50%;
+  height:20%;
+  background-color:#fcfaed;
+  color:black;
+  font-family:helvetica;
+  font-size:40px;
+}
+
+
+
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
@@ -202,11 +324,6 @@ font-size: 48px;
     /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
 
 @media print {
     *,
@@ -232,10 +349,6 @@ font-size: 48px;
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
 
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
@@ -247,11 +360,6 @@ font-size: 48px;
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
 
     thead {
         display: table-header-group;
