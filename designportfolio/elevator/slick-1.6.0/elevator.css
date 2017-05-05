@@ -136,45 +136,54 @@ a.web {
 .img5{
 	position: absolute;
 	top:600px;
-	right:0;
-	width: 512.5px;
-	height:93.5px;
+	left:0;
+	width: 426.6px;
+	height:266.6px;
 	background-image:url(img5.png);
-	background-size: 512.5px 93.5px;
+	background-size: 426.6px 266.6px;
 	background-repeat: no-repeat;
 }
 
 .img6{
 	position: absolute;
 	top:600px;
-	left:0;
-	width: 128px;
-	height:362px;
+	right:0;
+	width: 426.6px;
+	height:266.6px;
 	background-image:url(img6.png);
-	background-size: 128px 362px;
+	background-size: 426.6px 266.6px;
 	background-repeat: no-repeat;
 }
 
 .img7{
 	position: absolute;
-	top:600px;
-	left:150px;
-	width: 208px;
-	height:128.5px;
+	top:900px;
+	left:0px;
+	width: 426.6px;
+	height:266.6px;
 	background-image:url(img7.png);
-	background-size: 208px 128.5px;
+	background-size: 426.6px 266.6px;
 	background-repeat: no-repeat;
 }
 
 .img8{
 	position: absolute;
-	top:750px;
-	left:150px;
-	width: 242px;
-	height:91.5px;
+	top:900px;
+	right:0px;
+	width: 426.6px;
+	height:266.6px;
 	background-image:url(img8.png);
-	background-size: 242px 91.5px;
+	background-size: 426.6px 266.6px;
 	background-repeat: no-repeat;
+}
+
+.index{
+	border-top:0px solid #adafb2 ;
+	position:relative;
+	top: 20%;
+	border-top-style: dotted;
+	background-color: #fafafa;
+	height:300px;
 }
 
 .copyrights{
@@ -187,3 +196,5 @@ a.web {
 	width:20%;
 	text-align:center;
 }
+
+
