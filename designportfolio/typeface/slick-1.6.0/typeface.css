@@ -187,5 +187,15 @@ a.web {
 	height:300px;
 }
 
+.copyrights{
+	position: relative;
+	top:25%;
+	left:40%;
+	font-family:"oswald";
+	font-size:10px;
+	color:grey;
+	width:20%;
+	text-align:center;
+}
 
 

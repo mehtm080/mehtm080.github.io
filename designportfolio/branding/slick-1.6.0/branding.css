@@ -88,3 +88,34 @@ a.web {
 	height:220%;
 	background-color: #fff;
 }
+
+.img8{
+	position: absolute;
+	top:450px;
+	left:30%;
+	width: 375px;
+	height:525px;
+	background-image:url(img8.jpg);
+	background-size: 375px 525px;
+	background-repeat: no-repeat;
+}
+
+.index{
+	border-top:0px solid #adafb2 ;
+	position:relative;
+	top: 20%;
+	border-top-style: dotted;
+	background-color: #fafafa;
+	height:300px;
+}
+
+.copyrights{
+	position: relative;
+	top:25%;
+	left:40%;
+	font-family:"oswald";
+	font-size:10px;
+	color:grey;
+	width:20%;
+	text-align:center;
+}

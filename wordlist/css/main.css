@@ -29,6 +29,10 @@ html, body{
   
 }
 
+.selected {
+  background-color: #5998ff;
+}
+
 .row-1{
     position:absolute;
     width:10%;
@@ -149,7 +153,6 @@ li{
     background-color: black;
     transform:rotate(90deg);
 }
-
 
 .icon-1 img {
   position:absolute;
@@ -305,25 +308,32 @@ input[type=range]:focus::-ms-fill-upper {
 
 .translation-box{
   position:absolute;
-  top:40%;
+  top:50%;
   left:25%;
   width:50%;
-  height:20%;
+  height:100px;
+  margin-top:-50px;
   background-color:#fcfaed;
 }
 
 .translation{
-  width:90%;
-  height:5%;
-  position:absolute;
   text-align:center;
-  left:5%;
-  top:40%;
   color:#5998ff;
   font-family:helvetica;
   font-size:40px;
   font-style:bold;
+  line-height: 100px;
 
+
+}
+
+.reload{
+  position:absolute;
+  top:89%;
+  left:95%;
+  height:30px;
+  width:auto;
+  background-color: #fcfaed;
 }
 
 
