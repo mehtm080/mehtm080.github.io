@@ -557,7 +557,7 @@ $(".arrow").click(function() {
 	var translation = "";
 	$(".selected").each(function() {
 		console.log($(this).data("engword"));
-		translation = translation + " " + $(this).data("engword");
+		translation = translation + " <span class='readme' data-audio='"+  $(this).data("audio") +"'>" + $(this).data("engword") + "</span>";
 	});
 
 	$('.translation').html(translation);
@@ -570,9 +570,15 @@ $('html, body').animate({
 	$(".sentence").show();
 });
 
+$("body").on("mouseover", ".readme", function() {
+	console.log("hover");
+  //responsiveVoice.speak($(this).data("original"));
+  var audio = new Audio('voiceover/' + $(this).data("audio"));
+audio.play();
+});
 
 $(".go-home").click(function() {
-
+$("input[type=range]").val(50);
 
 	$('.translation').html("");
 		$(".word-marker1").removeClass("selected");
@@ -590,4 +596,5 @@ $('html, body').animate({
         }, 1000);
 	
 });
+
 
