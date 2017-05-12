@@ -433,3 +433,22 @@ a{
   infinite ease-in alternate;
 }
 
+.sketches3{
+	position:relative;
+	margin-top: 10px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
+.chance-final{
+	position:relative;
+	margin-top: -20px;
+	font-size: 30px;
+	color: #70a6ff;
+	font-family: futura;
+	text-align: center;
+}
+
+
